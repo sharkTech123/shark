@@ -1,0 +1,783 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.adminAppPanel {
+  background-color: white;
+  color: #fff;
+  /* White text color */
+  font-family: "Montserrat", sans-serif;
+}
+
+.adminIcon1 {
+  font-size: 20px;
+}
+.adminHeaderRight {
+  text-align: right;
+  width: 100%;
+  display: inline-flex;
+  gap: 20px;
+  justify-content: end;
+  align-items: center;
+}
+#adminLogout {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  color: #2a3447;
+
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#adminLogout:hover {
+  color: #8a7100;
+  transition: ease-in 0.5;
+}
+
+.adminIcon,
+.adminIconHeader,
+.adminCloseIcon {
+  line-height: 1px;
+  font-size: 20px;
+  color: #fff;
+  /* White color */
+}
+
+.adminIcon .adminIconHeader {
+  margin-right: 5px;
+}
+
+.adminCloseIcon {
+  margin-left: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 260px 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas:
+    "sidebar header header header"
+    "sidebar main main main";
+  height: 100vh;
+}
+
+/* Header */
+.adminHeader {
+  grid-area: header;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+  background-color: #8a98b4;
+}
+
+.adminMenuIcon {
+  display: none;
+}
+
+.searchContainer {
+  position: relative;
+}
+
+.searchContainer input {
+  outline: none;
+  border: 1px solid black;
+}
+
+.searchContainer input:focus {
+  border: 1px solid #ff1a1a;
+  /* Darker red on focus */
+}
+
+.searchInput {
+  padding: 5px 30px 5px 10px;
+  border-radius: 25px;
+  /* Rounded input */
+  border: none;
+  background-color: #fff;
+  color: #333;
+  width: 200px;
+  transition: width 0.3s ease-in-out;
+  /* Transition for width change */
+}
+
+.searchInput:focus {
+  width: 250px;
+  /* Adjusted width when focused */
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: red;
+  /* White color */
+  cursor: pointer;
+}
+
+.searchIcon:focus {
+  color: #d50000;
+}
+
+.adminIcon {
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.adminIcon:hover {
+  opacity: 0.8;
+}
+
+/* End Header */
+
+/* Sidebar */
+#adminSidebar {
+  grid-area: sidebar;
+  height: 100%;
+  background-color: #1a202c;
+  overflow-y: auto;
+  transition: all 0.5s;
+}
+
+.adminSidebarTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px 0px 30px;
+  margin-bottom: 30px;
+}
+
+.adminSidebarTitle > span {
+  display: none;
+}
+
+.adminSidebarBrand {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.adminSidebarList {
+  padding: 0;
+  list-style-type: none;
+}
+
+.adminSidebarList a {
+  text-decoration: none;
+  color: #fff;
+  /* White color */
+}
+
+.adminSidebarListItem {
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.adminSidebarListItem:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.adminSidebarListItem > a {
+  text-decoration: none;
+  color: #fff;
+  /* White color */
+}
+
+.sidebarResponsive {
+  display: inline !important;
+  position: absolute;
+  z-index: 12 !important;
+}
+/* ////////////////////////////////////////////////////////////////// */
+.addropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Main link style */
+.admainLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+#DodownSpan {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  gap: 50px;
+}
+/* Dropdown content */
+.addropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #85b0ec;
+  min-width: 230px;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Dropdown content links */
+.addropdownContent .link {
+  color: rgb(0, 0, 0);
+  left: 20;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.addropdownContent .link:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Icon in the main link */
+.adadminIcon {
+  margin-right: 8px;
+}
+
+/* Icon in the dropdown content */
+.addropdownIcon {
+  margin-right: 8px;
+}
+
+/* Show the dropdown content on hover */
+.addropdown:hover .addropdownContent {
+  display: block;
+}
+/* End Sidebar */
+
+/* Main */
+.mainContainer {
+  grid-area: main;
+  overflow-y: auto;
+  padding: 20px;
+  color: black;
+  background-color: #ddedfe;
+}
+
+.mainTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 15px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #ff39396b;
+
+  transition: transform 0.3s ease;
+}
+
+.card:first-child {
+  background-color: #ff39396b;
+  color: black;
+}
+
+.card:nth-child(2) {
+  background: #ff39396b;
+  color: black;
+}
+
+.card:nth-child(3) {
+  background-color: #ff39396b;
+  color: black;
+}
+
+.card:nth-child(4) {
+  background-color: #ff39396b;
+  color: black;
+}
+
+.cardInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardInner > .cardIcon {
+  font-size: 25px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  /* background: linear-gradient(
+      to bottom,
+      #ff3333,
+      #cc0000
+    ); */
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 60px;
+  height: 300px;
+}
+
+.charts .chart {
+  background: #ff6666;
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  /* Smooth transition */
+}
+
+.charts .chart:hover {
+  transform: translateY(-5px);
+  background: #ff1a1a;
+}
+
+/* End Main */
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+      "header"
+      "main";
+  }
+
+  #adminSidebar {
+    display: none;
+  }
+
+  .adminMenuIcon {
+    display: inline;
+  }
+
+  .adminSidebarTitle > span {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .adminHeader {
+    padding: 0 15px;
+  }
+
+  .searchInput {
+    width: 150px;
+  }
+
+  .mainCards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+}
+
+/* Extra Small <= 576px */
+@media screen and (max-width: 576px) {
+  .adminHeader {
+    padding: 0 10px;
+  }
+
+  .searchInput {
+    width: 120px;
+  }
+}
+
+/* ////////// Add New User Form /////// */
+.addNewUser {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.724);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userModel {
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #2a3447;
+  position: relative;
+  margin: 10px;
+  width: 100%;
+  max-width: 650px;
+  /* Limit maximum width for larger screens */
+}
+
+.userFormCloseIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#userFormCloseIcon {
+  font-size: 1.3rem;
+}
+
+.userFormHeading {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #ddd;
+}
+
+.addNewUser .userModel form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.addNewUser .userModel form .formInputFeilds {
+  width: 45%;
+  /* Adjust width for smaller screens */
+  margin-bottom: 10px;
+}
+
+.addNewUser .userModel form .formInputFeilds label {
+  font-size: 14px;
+}
+
+.addNewUser .userModel form .formInputFeilds input {
+  padding: 8px;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.addNewUser .userModel form button {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 528px) {
+  .addNewUser .userModel form {
+    display: block;
+  }
+
+  .userModel {
+    margin: 40px;
+  }
+
+  .addNewUser .userModel form .formInputFeilds {
+    width: 100%;
+  }
+}
+
+/* ////////////////User Component ////////////////// */
+.usersHeading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.usersHeading button {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.usersHeading button:hover {
+  animation: pulse 0.5s infinite alternate;
+}
+
+.userTable {
+  padding: 20px;
+  background-color: white;
+  color: black;
+}
+
+.userTableHeading {
+  display: flex;
+  align-items: center;
+  width: 270px;
+  margin-bottom: 7px;
+  border-bottom: 1px solid gray;
+  /* Border bottom for the whole div */
+  transition: border-bottom-color 0.5s ease;
+  /* Transition for border color change */
+}
+
+.userTableHeading:hover {
+  border-bottom: 2px solid red;
+  /* Change border color on hover */
+}
+
+.usersSearchIcon {
+  font-size: 18px;
+  margin-right: 5px;
+  color: red;
+  /* Add margin between icon and input */
+}
+
+.usersSearchInput {
+  border: none;
+  outline: none;
+  padding: 8px;
+  /* Adjust input padding */
+  flex: 1;
+  /* Take remaining space */
+  font-size: 16px;
+  /* Adjust font size */
+}
+
+.usersSearchInput::placeholder {
+  color: #999;
+  /* Adjust placeholder color */
+}
+
+.usersSearchInput:focus::placeholder {
+  color: transparent;
+  /* Hide placeholder on focus */
+}
+
+@media screen and (max-width: 1300px) {
+  .userTableDetails {
+    overflow-x: auto;
+  }
+
+  .userTableDetails table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: 8px;
+  }
+}
+
+/* //////// ////// /single user container /////////// */
+/* SingleUser.module.css */
+
+.singleUserContainer {
+  margin-top: 20px;
+  color: #1a202c;
+  text-align: left;
+  background-color: #e2e8f0;
+}
+
+.singleUserMainBody {
+  padding: 15px;
+}
+
+.singleUserCard {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.singleUserCardBody {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1rem;
+}
+
+.singleUserRowGuttersSm {
+  margin-right: -8px;
+  margin-left: -8px;
+}
+
+.singleUserRowGuttersSm > .col,
+.singleUserRowGuttersSm > [class*="col-"] {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.singleUserMb3,
+.singleUserMy3 {
+  margin-bottom: 1rem !important;
+}
+
+.singleUserBgGray300 {
+  background-color: #e2e8f0;
+}
+
+.singleUserH100 {
+  height: 100% !important;
+}
+
+.singleUserShadowNone {
+  box-shadow: none !important;
+}
+
+/* ///////////////////////////////Product component /////////////////////////// */
+
+/* AdminApp.module.css */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+/* Column classes */
+.col {
+  flex: 0 0 auto;
+  padding: 0 15px;
+}
+
+.colSm12 {
+  width: 100%;
+}
+
+.colMd12 {
+  width: 100%;
+}
+
+.colLg8 {
+  width: 66.66667%;
+}
+
+.colXl8 {
+  width: 66.66667%;
+}
+
+.colLg4 {
+  width: 33.33333%;
+}
+
+.colXl4 {
+  width: 33.33333%;
+}
+
+/* Common block styles */
+.tm-block {
+  background-color: #343a40;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.tm-bg-primary-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.tm-block-title {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+/* Product table styles */
+.tm-product-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tm-product-table th,
+.tm-product-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.mb3 {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.schoolHeadingSection{
+    background-color: #EB0009;
+    text-align: center;
+    font-family: "Roboto", Sans-serif;
+}
+.schoolHeading{
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2rem 0;
+}
+.schoolHeading h2{
+    color: #FFFFFF;
+    font-size: 81px;
+    font-weight: 900;
+    line-height: 1.2em;
+}
+.schoolHeading hr{
+    width: 65%;
+    margin: 0 auto;
+    border: 2px solid #FFFFFF;
+    opacity: 1;
+}
+@media (max-width: 767px){
+    .schoolHeading h2{
+        font-size: 65px;
+    }
+}
+@media (max-width: 540px){
+    .schoolHeading h2{
+        font-size: 40px;
+    }
+}
+/* //////////////////////////////practice section ///////////////////////////////////// */
+.practiceSection{
+    padding: 3rem 0;
+}
+.practiceContainer{
+    max-width: 1200px;
+    margin: auto;
+    margin-left: auto;
+    text-align: center;
+    font-family: "Roboto", Sans-serif;
+    padding: 0px 1rem;
+}
+.practiceHeading h4{
+    color: #000000;
+    font-size: 65px;
+    font-weight: 900;
+    line-height: 1.2em;
+    margin: 20px 0px;
+    font-family: "Roboto", Sans-serif;
+}
+.practiceHeading hr{
+    width: 100%;
+    border: 1px solid black;
+    opacity: 1;
+}
+.practiceParagraph{
+    margin-top: 40px;
+}
+.practiceParagraph p{
+    text-align: center;
+    color: #000000;
+    font-family: "Roboto", Sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 20px
+}
+@media (max-width: 672px){
+    .practiceHeading h4{
+        font-size: 45px;
+    }
+}
+@media (max-width: 475px){
+    .practiceHeading h4{
+        font-size: 34px;
+    }
+}
+/* //////////////////////////driving test routes ///////////////////////// */
+.testRoutes{
+    padding: 3rem 0;
+}
+.testRoutesContainer{
+    max-width: 1200px;
+    margin: auto;
+    margin-left: auto;
+    text-align: center;
+    font-family: "Roboto", Sans-serif;
+    padding: 0px 1rem;
+}
+.testRoutesHeading h4{
+    color: #000000;
+    font-size: 65px;
+    font-weight: 900;
+    line-height: 1.2em;
+    margin: 20px 0px;
+    font-family: "Roboto", Sans-serif;
+}
+.testRoutesHeading hr{
+    width: 100%;
+    border: 1px solid black;
+    opacity: 1;
+}
+.testRoutesParagraph{
+    margin-top: 40px;
+}
+.testRoutesParagraph p{
+    text-align: center;
+    color: #000000;
+    font-family: "Roboto", Sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    
+}
+@media (max-width: 420px){
+    .testRoutesHeading h4{
+        font-size: 45px;
+    }
+}
+/* ////////////////////////// glossary section ////////////////////// */
+
+
+.glossarySection {
+    text-align: center;
+    color: red;
+  }
+  .glossarySection h2{
+    text-decoration: underline;
+  }
+  .glossaryList {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .term p {
+  margin-bottom: 0;
+  font-size: 1.2em
+  }
+  /* -------------------------------test route section css ------------------------------ */
+  .RouteSection{
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2rem 0;
+  }
+ .routes{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .routes a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #EB0009;
+ }
+ .routes a:hover{
+    color: rgb(75, 75, 243);
+ }
+ @media (max-width: 767px){
+    .routes{
+        display: flex;
+        flex-direction: column;
+
+       
+    }
+    .routes a{
+        margin-top: 1rem;
+    }
+ }
+  /* /////////////// reviews section ///////////////// */
+.facebookReviewsSection {
+    text-align: center;
+    padding: 2rem 0;
+   }
+  
+   
+   .facebookReviewsContainer {
+  padding: 2rem 0;
+     background-color: red;
+     
+   }
+   .facebookReviewsContainer hr{
+    border: 2px solid #fff;
+   
+   opacity: 1;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+   }
+ 
+   
+    #heading1 {
+     color: white;
+     font-family: "Arial", Sans-serif;
+     font-size: 65px;
+    
+   }
+   
+   .reviewsList {
+     display: grid;
+     grid-gap: 20px;
+   }
+   
+   .review {
+     background-color: white;
+     padding: 10px;
+     border-radius: 5px;
+   }
+   .followUsLinks{
+     max-width: 1140px;
+     margin-left: auto;
+     margin-right: auto;
+    
+   }
+   .followUsLinks hr{
+     border: 1.05px solid #fff;
+     text-align: center;
+     width: 38%;
+     margin: 0 auto;
+   }
+   .followUsLinks h4{
+    margin-top: 1.8rem;
+     font-family: "Arial", Sans-serif;
+     color: #FFFFFF;
+     line-height: 1;
+     font-size: 2.8em;
+     font-weight: 600;
+     margin-bottom: 1.8rem;
+   }
+   .socialFollowIcons {
+     display: flex;
+     justify-content:space-evenly;
+     max-width: 800px;
+     margin-right: auto;
+     margin-left: auto;
+     padding: 2rem 0;
+     
+   }
+ 
+   .socialFollowIcons a {
+     display: inline-block;
+     background-color: white;
+     border-radius: 6px;
+     padding: 8px 10px 8px 10px;
+   
+     transition: transform 0.3s;
+   }
+ #FollowIcons{
+     color: #eb0009;
+     font-size: 1.7rem;
+ }
+   .socialFollowIcons  a:hover {
+     transform: translateY(-5px);
+   }
+   
+   .socialFollowIcons  i {
+     font-size: 24px;
+     color: #333; /* Change color as needed */
+   }
+   @media (max-width: 770px) {
+     .facebookReviewsSection #heading1{
+         font-size: 45px;
+     }
+     #heading2{
+         font-size: 45px;
+     }
+     .followUsLinks h4{
+         font-size: 2.8em;
+     }
+   }

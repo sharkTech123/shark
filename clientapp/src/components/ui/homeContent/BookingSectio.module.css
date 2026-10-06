@@ -1,0 +1,784 @@
+.BookingSectionPage {
+  padding: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(0, 0, 77, 0.486);
+}
+.bookingheading h2 {
+  text-align: center;
+  color: rgb(161, 207, 255);
+  font-size: 4rem;
+  font-weight: 700;
+}
+.bookingheading p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgba(240, 248, 255, 0.679);
+  text-align: center;
+}
+.BookingSectionContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 4rem 0px;
+}
+.BookingSectionImgs {
+  max-width: 50%;
+  width: 100%;
+
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  text-align: center;
+}
+.BookingSectionImgs #imges1 {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+
+  max-width: 200px;
+  height: 200px;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+.BookingSectionImgs #imges2 {
+  position: absolute;
+  top: -20px;
+
+  right: 50px;
+
+  max-width: 200px;
+  height: 200px;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+.BookingSectionImgs #imges3 {
+  position: absolute;
+  bottom: -40px;
+  left: 70px;
+
+  max-width: 200px;
+  height: 200px;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+.BookingSectionImgs #imges4 {
+  position: absolute;
+  bottom: -10px;
+  right: 70px;
+
+  max-width: 200px;
+  height: 200px;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+.bookingSectionAccordaion {
+  max-width: 50%;
+  width: 100%;
+}
+
+@keyframes smoothUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Move the images up */
+  }
+  100% {
+    transform: translateY(0); /* Move the images back to original position */
+  }
+}
+
+#imges1,
+#imges2,
+#imges3,
+#imges4 {
+  animation: smoothUpDown 4s ease-in-out infinite; /* Animation applied to both images */
+  /* Optional, to add some space between the images */
+}
+#imges1,
+#imges4 {
+  animation-delay: 1s;
+}
+
+@media (max-width: 1100px) {
+  .BookingSectionImgs #imges1 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+    max-width: 200px;
+    height: 200px;
+    width: 100%;
+  }
+  .BookingSectionImgs #imges2 {
+    position: absolute;
+    top: -20px;
+
+    right: 20px;
+
+    max-width: 200px;
+    height: 200px;
+    width: 100%;
+  }
+  .BookingSectionImgs #imges3 {
+    position: absolute;
+    bottom: -40px;
+    left: 30px;
+
+    max-width: 200px;
+    height: 200px;
+    width: 100%;
+  }
+  .BookingSectionImgs #imges4 {
+    bottom: 10px;
+    right: 30px;
+
+    max-width: 200px;
+    height: 200px;
+    width: 100%;
+  }
+}
+@media (max-width: 967px) {
+  .BookingSectionImgs #imges1 {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+
+    max-width: 200px;
+    height: 200px;
+    width: 100%;
+  }
+  .BookingSectionImgs #imges2 {
+    position: absolute;
+    top: -20px;
+
+    right: 5px;
+
+    max-width: 200px;
+    height: 200px;
+    width: 100%;
+  }
+  .BookingSectionImgs #imges3 {
+    position: absolute;
+    bottom: -40px;
+    left: 5px;
+
+    max-width: 200px;
+    height: 200px;
+    width: 100%;
+  }
+  .BookingSectionImgs #imges4 {
+    bottom: 10px;
+    right: 5px;
+
+    max-width: 200px;
+    height: 200px;
+    width: 100%;
+  }
+}
+@media (max-width: 867px) {
+  .BookingSectionImgs #imges1 {
+    max-width: 160px;
+    height: 160px;
+    width: 100%;
+  }
+  .BookingSectionImgs #imges2 {
+    max-width: 160px;
+    height: 160px;
+    width: 100%;
+  }
+  .BookingSectionImgs #imges3 {
+    max-width: 160px;
+    height: 160px;
+    width: 100%;
+  }
+  .BookingSectionImgs #imges4 {
+    max-width: 160px;
+    height: 160px;
+    width: 100%;
+  }
+}
+@media (max-width: 727px) {
+  .BookingSectionContainer {
+    flex-direction: column;
+  }
+  .BookingSectionImgs {
+    max-width: 100%;
+    width: 100%;
+  }
+  .bookingSectionAccordaion {
+    max-width: 100%;
+    width: 100%;
+  }
+  .BookingSectionImgs {
+    display: none;
+  }
+}
+
+@media (max-width: 467px) {
+  .bookingheading h2 {
+    font-size: 3rem;
+  }
+}
+
+.slide1 {
+  background: url("../../../assets/images/manualcrouselImg.jpg");
+  background-size: cover;
+
+  min-height: 500px;
+  height: 100%;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  overflow: hidden;
+  will-change: transform, box-shadow;
+}
+
+.slide2 {
+  background: url("../../../assets/images/automaticCrousalImg.jpg");
+  background-size: cover;
+
+  min-height: 500px;
+  height: 100%;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  overflow: hidden;
+  will-change: transform, box-shadow;
+}
+
+.slide3 {
+  background: url("../../../assets/images/IntensiveCrousalImg.jpg");
+  background-size: cover;
+
+  min-height: 500px;
+  height: 100%;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  overflow: hidden;
+  will-change: transform, box-shadow;
+}
+.slide4 {
+  background: url("../../../assets/images/passplusCarousalImg.jpg");
+  background-size: cover;
+
+  min-height: 500px;
+  height: 100%;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  overflow: hidden;
+  will-change: transform, box-shadow;
+}
+.slide5 {
+  background: url("../../../assets/images/theoryTestCrausalImg.jpg");
+  background-size: cover;
+
+  min-height: 500px;
+  height: 100%;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  overflow: hidden;
+  will-change: transform, box-shadow;
+}
+.slide6 {
+  background: url("../../../assets/images/theoryTestCrausalImg.jpg");
+  background-size: cover;
+
+  min-height: 500px;
+  height: 100%;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  overflow: hidden;
+  will-change: transform, box-shadow;
+}
+.opicity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: linear-gradient(180deg, #000150, #d74b00);
+  border-radius: 10px;
+}
+
+#crousalContent {
+  padding: 2rem 1rem;
+  position: sticky;
+}
+#crousalContent button {
+  padding: 0.5rem 1rem;
+  background-color: rgba(11, 0, 39, 0.615);
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+}
+.swiperContent a {
+  text-decoration: none;
+}
+
+.swiperContent h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.swiperContent p {
+  font-size: 1rem;
+  color: rgb(211, 229, 251);
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+/* Apply a hover effect to the local classes */
+.slide1:hover,
+.slide2:hover,
+.slide3:hover,
+.slide4:hover,
+.slide5:hover {
+  transform: translateY(-15px) rotateY(5deg);
+  box-shadow: 0 20px 30px rgba(197, 197, 197, 0.3);
+  cursor: pointer;
+  filter: brightness(1.1);
+}
+
+/* /////////////////////////////////////////// */
+/* /////////////////////////////////////////// */
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  background: url(../../../assets/newyearbg.png);
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 1640px;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.2rem;
+  width: 50%;
+  z-index: 2;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  color: #d3d3d3;
+  font-weight: 700;
+  text-align: left;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #a4ffff;
+  text-align: left;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #ebebeb;
+  line-height: 1.6;
+}
+
+.exploreBtn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 2rem;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  background: transparent;
+  color: #ffffff;
+  max-width: 200px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.exploreBtn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #009ea9, #00d3e6, #00a9b5);
+  z-index: -1;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+
+.exploreBtn:hover::before {
+  opacity: 1;
+  animation: borderGlow 2s linear infinite;
+}
+
+@keyframes borderGlow {
+  0% {
+    box-shadow: 0 0 10px #ff4d4d, 0 0 20px #ff4d4d, 0 0 30px #ff4d4d;
+  }
+  50% {
+    box-shadow: 0 0 15px #ff914d, 0 0 25px #ff914d, 0 0 40px #ff914d;
+  }
+  100% {
+    box-shadow: 0 0 10px #ff4d4d, 0 0 20px #ff4d4d, 0 0 30px #ff4d4d;
+  }
+}
+
+.exploreBtn .arrow {
+  display: inline-block;
+  transition: transform 0.4s ease;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.exploreBtn:hover .arrow {
+  transform: translateX(8px);
+}
+
+.exploreBtn .text {
+  position: relative;
+  z-index: 2;
+}
+
+.exploreBtn:hover {
+  color: #fff;
+  border-color: transparent;
+}
+
+.exploreBtn:hover::before {
+  opacity: 1;
+}
+
+.imageSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageSection img {
+  width: 100%;
+  max-width: 860px;
+  filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.35)) saturate(1.3)
+    brightness(1.1);
+  object-fit: contain;
+}
+
+.arrows {
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+  display: flex;
+  gap: 10px;
+}
+
+.arrows button {
+  background: #f0eaff;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.arrows button:hover {
+  background: #ff4d4d;
+  color: #fff;
+}
+
+.dots {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f5f3ff;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.activeDot {
+  background: #ff4d4d;
+  filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.35)) saturate(1.3)
+    brightness(1.1);
+  border-color: #ffffff;
+  border: 2px solid white;
+}
+
+.mobileBackground {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .slide {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  .textSection {
+    z-index: 2;
+    padding: 0.8rem;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #000;
+    text-align: left;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .arrows {
+    bottom: 25px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .dots {
+    flex-direction: row;
+    bottom: 10px;
+    top: auto;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .exploreBtn {
+    border-color: #fff;
+    color: #fff;
+  }
+}
+
+@media (max-width: 724px) {
+  .slider {
+    height: 600px;
+    background: linear-gradient(135deg, #006977d7, #008c9ecc);
+  }
+  .title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .subtitle {
+    text-align: center;
+    color: white;
+  }
+  .description {
+    color: white;
+    font-size: 1rem;
+  }
+  .imageSection {
+    display: none;
+  }
+
+  .mobileBackground {
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.4);
+    z-index: 0;
+  }
+
+  .exploreBtn {
+    margin: 0px auto;
+  }
+}
+@media (max-width: 428px) {
+  .title {
+    font-size: 1.9rem;
+    font-weight: 700;
+  }
+}
+
+/* //////////////////////////////////// */
+.timerSection {
+  max-width: 1240px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* ////////////////////////////////////// */
+
+#pdp {
+  background-color: #adadad9d;
+  padding: 8px 18px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+.mainFeatures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+
+  text-align: center;
+  max-width: 1500px;
+  padding: 0px 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+#mainFeatures {
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  display: grid;
+}
+
+.column {
+  padding: 25px 20px;
+  background: linear-gradient(180deg, #ffffffd7, #bff8ffcc);
+
+  border-radius: 10px;
+  box-shadow: 0px 0px 55px 5px rgba(116, 116, 116, 0.171);
+
+  transition: box-shadow 0.3s ease;
+}
+#column {
+  background: linear-gradient(180deg, #3c3764d7, #48d4ffcc);
+  padding: 30px 15px;
+}
+.column a {
+  text-decoration: none;
+  color: #ff0004;
+}
+
+.column:hover {
+  box-shadow: 0px 0px 55px 5px rgba(163, 163, 163, 0.555);
+  border: 1px solid #cccccc;
+}
+.column h3 {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.column p {
+  font-size: 16px;
+
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #000000;
+}
+.column span {
+  background-color: #cfffff;
+  padding: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 50px;
+  color: #017fa5;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#featuresIcon {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  display: block;
+}
+
+.column span:hover {
+  transform: scale(1.2);
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+  color: #ff0004;
+}
+#featuresIconSRU {
+  font-size: 6rem;
+}
+@media (max-width: 1085px) {
+  .features h4 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .features h4 {
+    font-size: 30px;
+  }
+  .mainFeatures {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}

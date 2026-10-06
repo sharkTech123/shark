@@ -1,0 +1,112 @@
+.adminLiveChat-dashboard {
+  display: flex;
+  gap: 20px;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.sidebar-LiveChat {
+  width: 350px;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-right: 1px solid #ccc;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.sidebar-LiveChat h2,
+.sidebar-LiveChat h3 {
+  margin: 0.5rem 0;
+}
+
+.chat-list-Sidebar {
+  overflow-y: auto;
+  max-height: 500px;
+  padding-right: 5px;
+  margin-bottom: 1rem;
+}
+
+.chat-list-Sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chat-list-Sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.Live-chat-btn {
+  width: 100%;
+
+  font-size: 14px;
+  text-align: left;
+  background-color: #007bff;
+  border: 1px solid #ddd;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.Live-chat-btn:hover {
+  background-color: #e9f0ff;
+  border-color: #007bff;
+  color: black;
+}
+.chat-main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chatbot-window {
+  height: 500px;
+  width: 500px;
+  border-radius: 12px;
+}
+
+.admin-message {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+  border-top-right-radius: 0;
+}
+
+.user-message {
+  align-self: flex-start;
+  background-color: #ffffff;
+  border-top-left-radius: 0;
+}
+
+.user-message {
+  background-color: #e0e0e0;
+  color: black;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.admin-message {
+  background-color: rgb(75, 0, 129);
+  align-self: flex-start;
+  margin-right: auto;
+  color: white;
+}
+/* AdminLiveChat.css */
+.active-chat {
+  background-color: #e2e2e2; /* Example: Change the background color */
+  font-size: 14px;
+  border-left: 5px solid #007bff;
+  border-top: 1px solid #007bff;
+  border-right: 1px solid #007bff;
+  border-bottom: 1px solid #007bff;
+  border-radius: 0px 5px 5px 0px; /* Highlight with a border */
+}
+.system-msg {
+  text-align: center;
+  color: #2e2e2e;
+  font-style: italic;
+
+  font-size: 0.95rem;
+  background-color: transparent;
+}

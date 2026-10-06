@@ -1,0 +1,63 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.faqs-section {
+  text-align: center;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 70px 0;
+  background: url(../../assets/images/faq-bg.jpg) no-repeat center top / cover;
+  background-attachment: fixed;
+}
+.faqs-container h4 {
+  color: #000000;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+.faqs-container p {
+  color: #ed2025;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.faqs-container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accordion-header button {
+  background: linear-gradient(135deg, #21005e, #5b3ead);
+}
+.accordion-header h5 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+}
+.accordion-button {
+  padding: 30px;
+
+  border-bottom: 5px solid #ed2025;
+}
+.accordion-item {
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.12);
+  margin-bottom: 30px;
+  border: 1px solid #21005e;
+  font-family: "Arial", Sans-serif;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-btn-focus-border-color: #ed2025;
+}
+.accordion-body {
+  text-align: left;
+  line-height: 28px;
+  color: #626262;
+  font-family: "Arial", Sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}

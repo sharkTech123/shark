@@ -1,0 +1,712 @@
+.pageWrapper {
+  font-family: "Segoe UI", sans-serif;
+  padding-bottom: 2rem;
+
+  background-color: #000000;
+}
+.pageWrapper ul {
+  padding-left: 0px;
+}
+
+.banner {
+  padding: 200px 1rem 150px 1rem;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.opicity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: linear-gradient(135deg, #0008ff, #00eaff, #00f0d0);
+  background-size: 400% 400%;
+  animation: gradientShiftr 15s ease infinite;
+}
+@keyframes gradientShiftr {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.banner h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  text-shadow: #333;
+}
+
+.bannerheader {
+  position: sticky;
+}
+@media (max-width: 1020px) {
+  .banner {
+    padding: 150px 1rem 100px 1rem;
+  }
+  .banner h1 {
+    font-size: 3.7rem;
+  }
+}
+@media (max-width: 727px) {
+  .banner {
+    padding: 100px 1rem 70px 1rem;
+  }
+  .banner h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 520px) {
+  .banner {
+    padding: 80px 1rem 50px 1rem;
+  }
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 427px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+}
+
+.contentdiv {
+  padding: 2rem 0px;
+}
+.contentSection {
+  padding: 80px 20px;
+  max-width: 90%; /* Ensure sections take up more space */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  background: linear-gradient(to bottom, #34495e, #1abc9c);
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5); /* Darker shadow */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+  width: 100%; /* Full width for sections */
+}
+
+/* Animation Triggered When In View */
+.contentSection.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Title Styling */
+.contentSection h2 {
+  margin-bottom: 20px;
+  color: #12f3d5; /* Bright Yellow */
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Paragraph Styling */
+.contentSection p {
+  line-height: 1.8;
+  color: #ecf0f1; /* Light gray text for paragraphs */
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* List Styling */
+.contentSection ul,
+.contentSection ol {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.contentSection ul li,
+.contentSection ol li {
+  margin-bottom: 15px;
+  color: #00f7ff; /* Teal color for list items */
+  font-size: 1.1rem;
+}
+
+/* Hover Animations for List Items */
+.contentSection ul li:hover,
+.contentSection ol li:hover {
+  background-color: rgba(0, 66, 53, 0.253); /* Light teal hover */
+  transform: scale(1.01);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Note Styling */
+.note {
+  margin-top: 30px;
+  font-style: italic;
+  color: #e74c3c; /* Bright red color for the note */
+  font-size: 1.1rem;
+}
+
+/* Section Background Animations */
+.contentSection:nth-child(even) {
+  background: linear-gradient(180deg, #d4002e, #380013); /* Dark Red to Pink */
+}
+
+.contentSection:nth-child(odd) {
+  background: linear-gradient(180deg, #7f00d4, #00093e); /* Cyan to Indigo */
+}
+
+/* Animation for Section Appearance */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1020px) {
+  .contentSection h2 {
+    font-size: 2rem;
+  }
+  .contentSection p {
+    font-size: 1rem;
+  }
+  .contentSection ul li,
+  .contentSection ol li {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 727px) {
+  .contentSection h2 {
+    font-size: 1.5rem;
+  }
+  .contentSection {
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 727px) {
+  .contentSection h2 {
+    font-size: 1.2rem;
+  }
+}
+/* //////////////////////////////////// */
+/* Base Styles */
+.LearnerPortalcontainer {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #e1bee7);
+  padding: 2rem;
+  animation: fadeIn 1s ease-in;
+  border-radius: 12px;
+  max-width: 90%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.LearnerPortalheading {
+  color: #4a148c;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.LearnerPortalintro {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #37474f;
+  margin-bottom: 2rem;
+}
+
+.LearnerPortalsection {
+  margin-bottom: 2rem;
+  animation: slideUp 0.8s ease-out;
+}
+
+.LearnerPortalsection ul {
+  padding-left: 0px;
+}
+.LearnerPortalbulletList li {
+  background: #ffffffbb;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  border-left: 5px solid #4a148c;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.LearnerPortalbulletList li:hover {
+  transform: translateX(5px);
+}
+
+.LearnerPortalcard {
+  background: #fff;
+  border: 2px solid #ce93d8;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.LearnerPortalcard:hover {
+  transform: scale(1.02);
+}
+.LearnerPortalcard ul li {
+  font-size: 1.1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* ///////////////////////// */
+@media (max-width: 1027px) {
+  .LearnerPortalheading {
+    font-size: 2rem;
+  }
+  .LearnerPortalintro {
+    font-size: 1.1rem;
+  }
+  .LearnerPortalsection h2 {
+    font-size: 1.7rem;
+  }
+  .LearnerPortalcard h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 727px) {
+  .LearnerPortalheading {
+    font-size: 1.6rem;
+  }
+  .LearnerPortalintro {
+    font-size: 1rem;
+  }
+  .LearnerPortalsection h2 {
+    font-size: 1.3rem;
+  }
+  .LearnerPortalcard h3 {
+    font-size: 1.2rem;
+  }
+  .LearnerPortalbulletList li {
+    font-size: 1rem;
+  }
+  .LearnerPortalcard ul li {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 427px) {
+  .LearnerPortalheading {
+    font-size: 1.5rem;
+  }
+
+  .LearnerPortalsection h2 {
+    font-size: 1.2rem;
+  }
+  .LearnerPortalcard h3 {
+    font-size: 1.1rem;
+  }
+}
+/* /////////////////////////////////// */
+.learnerPortal2ndcontainer {
+  background: linear-gradient(to right, #e0f7fa, #fff3e0);
+  padding: 2rem;
+  border-radius: 12px;
+  animation: fadeInpl 1s ease-in-out;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+  margin-top: 2rem;
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@keyframes fadeInpl {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.learnerPortal2ndheading,
+.learnerPortal2ndsubheading,
+.learnerPortal2ndguideTitle {
+  color: #00796b;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.learnerPortal2ndtext {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.learnerPortal2ndlist li {
+  background: #ffffffbb;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  border-left: 5px solid #4a148c;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.learnerPortal2ndcta {
+  background-color: #ffcc80;
+  color: #bf360c;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+
+.learnerPortal2ndquote {
+  font-style: italic;
+  background-color: #f0f4c3;
+  border-left: 4px solid #cddc39;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+}
+
+.learnerPortal2ndnote {
+  font-size: 1rem;
+  color: #555;
+}
+@media (max-width: 727px) {
+  .learnerPortal2ndheading,
+  .learnerPortal2ndsubheading,
+  .learnerPortal2ndguideTitle {
+    font-size: 1.5rem;
+  }
+  .learnerPortal2ndtext {
+    font-size: 1.1rem;
+  }
+  .learnerPortal2ndlist {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 527px) {
+  .learnerPortal2ndheading,
+  .learnerPortal2ndsubheading,
+  .learnerPortal2ndguideTitle {
+    font-size: 1.2rem;
+  }
+  .learnerPortal2ndtext {
+    font-size: 1rem;
+  }
+}
+/* //////////////////////////////////////////// */
+.learnerPortal3rdwrapper {
+  padding: 2rem;
+  background: linear-gradient(120deg, #fff0e1, #f2c0fa);
+  border-radius: 16px;
+  max-width: 90%;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.learnerPortal3rdheading {
+  font-size: 2.5rem;
+  color: #02393a;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.learnerPortal3rdlist {
+  list-style: none;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.learnerPortal3rdlistItem {
+  background: #ffffff;
+  border-left: 5px solid #0077cc;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.learnerPortal3rdassessment {
+  background: #fffcf5;
+  border-left: 6px solid #ffa500;
+  padding: 1.2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(255, 165, 0, 0.1);
+}
+
+.learnerPortal3rdassessment h2 {
+  color: #d36f00;
+}
+
+.learnerPortal3rdassessment p {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.learnerPortal3rdcta {
+  display: inline-block;
+  margin-top: 0.8rem;
+  background: #ff9800;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.learnerPortal3rdcta:hover {
+  background: #fb8c00;
+}
+
+.learnerPortal3rdvark h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #004d40;
+  text-align: center;
+}
+
+.learnerPortal3rdvark p {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  color: #555;
+}
+
+.learnerPortal3rdvarkGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.learnerPortal3rdcard {
+  flex: 1 1 250px;
+  background: #ffffff;
+  border-left: 6px solid;
+  padding: 1rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.learnerPortal3rdcard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.learnerPortal3rdicon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.learnerPortal3rdcard h3 {
+  font-size: 1.2rem;
+  margin: 0.2rem 0;
+  color: #222;
+}
+
+.learnerPortal3rdcard p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.learnerPortal3rdsupport {
+  font-weight: bold;
+  color: #2e7d32;
+  margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .learnerPortal3rdheading {
+    font-size: 2rem;
+  }
+
+  .learnerPortal3rdvarkGrid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+@media (max-width: 527px) {
+  .learnerPortal3rdheading {
+    font-size: 1.5rem;
+  }
+  .learnerPortal3rdvark h2 {
+    font-size: 1.5rem;
+  }
+  .learnerPortal3rdwrapper {
+    padding: 1.5rem;
+  }
+}
+/* ///////////////////////////////////////// */
+.learnerPortal4thcontainer {
+  font-family: "Segoe UI", sans-serif;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  animation: fadeInER 1.2s ease-in;
+  border-radius: 1rem;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.learnerPortal4thheaderSection {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.learnerPortal4thtitle {
+  color: #00796b;
+  font-size: 2rem;
+  font-weight: bold;
+  animation: slideUpER 0.7s ease-out;
+}
+
+.learnerPortal4thintro {
+  color: #37474f;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+.learnerPortal4thlightbulb {
+  font-size: 1.5rem;
+  color: #ffca28;
+}
+
+.learnerPortal4thskillsSection {
+  background-color: #f0f4c3;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  animation: fadeInUpER 1s ease-in;
+}
+
+.learnerPortal4thsubtitle {
+  font-size: 1.6rem;
+  color: #558b2f;
+  margin-bottom: 1rem;
+}
+
+.learnerPortal4thskillsList {
+  list-style-type: none;
+  padding: 0;
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.learnerPortal4thskillItem {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #33691e;
+  transition: transform 0.3s;
+}
+
+.learnerPortal4thskillItem:hover {
+  transform: translateX(5px);
+  color: #1b5e20;
+}
+
+@keyframes fadeInER {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpER {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUpER {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .learnerPortal4thskillsList {
+    columns: 1;
+  }
+
+  .learnerPortal4thcontainer {
+    padding: 1.5rem;
+  }
+  .learnerPortal4thsubtitle {
+    font-size: 1.2rem;
+  }
+  .learnerPortal4thintro {
+    font-size: 1rem;
+  }
+  .learnerPortal4thtitle {
+    font-size: 1.5rem;
+  }
+  .learnerPortal4thskillItem {
+    font-size: 1rem;
+  }
+}
+/* ////////////////////////////////////////// */
+.tableImgBanner {
+  max-width: 1440px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2rem 0.7rem 1rem 0.7rem;
+}
+.tableImgBanner img {
+  width: 100%;
+}

@@ -1,0 +1,170 @@
+/* Add a gray background color with some padding */
+.blogscontainer {
+  background: #000000;
+  font-family: "Antonio", sans-serif;
+}
+.blogsHomeBanner {
+  position: relative;
+  background: url("../../assets/images/bloggingImage.jpg");
+  background-size: cover;
+  background-position: center;
+
+  padding: 250px 0;
+}
+
+.opicity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #000000d0;
+}
+/* Header/Blog Title */
+.blogsheader {
+  padding: 30px;
+
+  text-align: center;
+  position: sticky;
+  color: white;
+}
+.blogsheader h2 {
+  font-size: 5rem;
+  font-weight: 900;
+}
+.blogsrow {
+  max-width: 1700px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+/* Create two unequal columns that float next to each other */
+/* Left column */
+.blogsleftColumn {
+  float: left;
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 30px;
+}
+
+/* Right column */
+.blogsrightColumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.blogscard {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.blogscard:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Clear floats after the columns */
+
+.blogsrow::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Blog image */
+.blogImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other */
+@media screen and (max-width: 1250px) {
+  .blogsleftColumn {
+    width: 65%;
+  }
+
+  .blogsrightColumn {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .blogsleftColumn,
+  .blogsrightColumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.socialFollowIcons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  gap: 30px;
+  padding: 2rem 0;
+}
+
+.socialFollowIcons a {
+  display: inline-block;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0px auto;
+  color: rgb(255, 255, 255);
+  transition: transform 0.3s;
+}
+
+#FollowIcons {
+  font-size: 1.7rem;
+  display: block;
+  position: relative;
+  width: 1em;
+  height: 1em;
+}
+
+.socialFollowIcons a:hover {
+  transform: translateY(-5px);
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.socialFollowIcons i {
+  font-size: 24px;
+  color: #333;
+}
+
+@media (max-width: 770px) {
+  .followUsLinks h4 {
+    font-size: 2.8em;
+  }
+}
+@media (max-width: 720px) {
+  .followUsLinks hr {
+    height: 0px;
+    width: 300px;
+  }
+  .socialFollowIcons {
+    justify-content: center;
+  }
+}
+@media (max-width: 460px) {
+  .socialFollowIcons {
+    gap: 20px;
+    justify-content: center;
+  }
+}

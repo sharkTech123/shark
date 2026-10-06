@@ -1,0 +1,238 @@
+/* GlossaryComponent.module.css */
+.glossaryglossaryPage {
+  background-color: #000000;
+  padding-top: 1rem;
+}
+
+.glossarycontainerImage {
+  position: relative;
+  width: 100%;
+
+  background-image: url(../../../assets/images/glossaryImgbanner.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.opicity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #000000;
+}
+
+.opticitySticky {
+  position: sticky;
+  font-family: "Antonio", sans-serif;
+  max-width: 1640px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 100px 1rem;
+}
+
+.glossarycontenthead {
+  padding: 2rem 0px;
+}
+.glossarycontenthead h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gGpFrontListP p {
+  color: white;
+  background: linear-gradient(135deg, #944907, #760136b5);
+  font-size: 1.2rem;
+  padding: 1rem;
+  position: sticky;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: 44%;
+  width: 100%;
+
+  border-radius: 6px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 20px rgba(54, 54, 54, 0.656);
+
+  margin-bottom: 1rem;
+}
+
+.alertBtn {
+  padding-top: 2rem;
+  display: flex;
+  gap: 20px;
+}
+.alertBtn a button {
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  background: linear-gradient(135deg, #c65d01, #b90054);
+  border-radius: 10px;
+  color: #ffffff;
+  border: none;
+  padding: 18px 80px;
+  transition: transform 0.3s;
+}
+
+.alertBtn a button:hover {
+  transform: scale(1.09);
+  animation: 0.3s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1); /* Original size */
+  }
+  100% {
+    transform: scale(1.05); /* Slightly bigger size */
+  }
+}
+@media (max-width: 1020px) {
+  .glossarycontenthead h1 {
+    font-size: 3.7rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .glossarycontenthead h1 {
+    font-size: 3.2rem;
+  }
+
+  .gGpFrontListP p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .glossarycontenthead h1 {
+    font-size: 3rem;
+  }
+  .alertBtn {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .glossarycontenthead h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .glossarycontenthead h1 {
+    font-size: 2.2rem;
+  }
+}
+.glossarycontainer {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+
+  color: #ffffff;
+}
+
+.glossaryintroduction {
+  font-size: 1.3rem;
+
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #cb6205, #d2015fb5);
+  padding: 15px 10px;
+  border-radius: 6px;
+}
+
+.glossarysubTitle {
+  font-size: 2rem;
+  color: #b8e4ff;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  background: linear-gradient(
+    135deg,
+    #cb0558,
+    #51021a
+  ); /* Light green background for subheadings */
+  padding: 20px 10px;
+  border-radius: 5px;
+}
+
+.glossarytext {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #1f66bc, #010974);
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.glossarylist {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.glossarylist li {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #bc971f, #744201);
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+
+.glossarylist strong {
+  color: #00ffcc;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .glossarycontainer {
+    padding: 15px;
+  }
+
+  .glossarytitle {
+    font-size: 2rem;
+  }
+
+  .glossarysubTitle {
+    font-size: 1.6rem;
+  }
+
+  .glossarytext,
+  .glossaryintroduction {
+    font-size: 1rem;
+  }
+
+  .glossarylist li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .glossarycontainer {
+    padding: 10px;
+  }
+
+  .glossarytitle {
+    font-size: 1.8rem;
+  }
+
+  .glossarysubTitle {
+    font-size: 1.4rem;
+  }
+
+  .glossarytext,
+  .glossaryintroduction {
+    font-size: 0.9rem;
+  }
+
+  .glossarylist li {
+    font-size: 0.9rem;
+  }
+}

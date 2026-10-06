@@ -1,0 +1,311 @@
+
+.manualBanner{
+    background: url("./manualBanner.webp");
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    padding: 4rem 0px;
+    border-radius: 20px;
+  }
+
+ .bannerImg {
+    max-width: 48%;
+    width: 100%;
+    height: 400px;
+    position: relative;
+  }
+  .bannerImg img {
+    max-width: 150px;
+   height: 150px;
+    box-shadow: 0 0 20px rgba(206, 235, 255, 0.852);
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  #homeDrivingImg1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  #homeDrivingImg2 {
+    position: absolute;
+    top: -50px;
+    right: 200px;
+  }
+ 
+  
+  @keyframes smoothUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); /* Move the images up */
+    }
+    100% {
+      transform: translateY(0); /* Move the images back to original position */
+    }
+  }
+  #homeDrivingImg1:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  #homeDrivingImg2:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  #homeDrivingImg3:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  
+  #homeDrivingImg1,
+  #homeDrivingImg2 {
+    animation: smoothUpDown 2s ease-in-out infinite; /* Animation applied to both images */
+    /* Optional, to add some space between the images */
+  }
+  
+  /* If you want to delay the second image */
+  #homeDrivingImg2 {
+    animation-delay: 1s; /* Delay the second image's animation for staggered effect */
+  }
+ 
+  @media (max-width: 2100px) {
+    .home-content-D h1 {
+      font-size: 5.5rem;
+    }
+  }
+  @media (max-width: 1900px) {
+    .home-content-D h1 {
+      font-size: 4.7rem;
+    }
+  }
+  @media (max-width: 1600px) {
+    .home-content-D h1 {
+      font-size: 4.3rem;
+    }
+  }
+  @media (max-width: 1400px) {
+    .home-content-D h1 {
+      font-size: 4rem;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .home-content-D h1 {
+      font-size: 4rem;
+    }
+    .home-content-D {
+      max-width: 70%;
+      width: 100%;
+    }
+    .banner-img {
+      max-width: 30%;
+      width: 100%;
+    }
+  }
+  @media (max-width: 840px) {
+    .home-content-D {
+      max-width: 80%;
+      width: 100%;
+    }
+    .bannerImg {
+      max-width: 20%;
+      width: 100%;
+    }
+  }
+  @media (max-width: 777px) {
+    .home-banner-flex {
+      flex-direction: column-reverse;
+    }
+    .home-content-D {
+      max-width: 100%;
+    }
+    .bannerImg {
+      max-width: 100%;
+      height: 50px;
+    }
+    .bannerImg img {
+      max-width: 100px;
+      height: 100px;
+    }
+  
+    #home-drivingImg-1 {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    #home-drivingImg-2 {
+      position: absolute;
+      top: 20px;
+      right: 200px;
+    }
+  
+  }
+  
+@media (max-width: 467px) {
+    .home-content-D h1 {
+      font-size: 3.5rem;
+    }
+    .home-content-D p {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+    .button-style {
+      padding: 8px 25px;
+      font-size: 1.2rem;
+    }
+    .home-bannerbnt-sec span {
+      font-size: 1.5rem;
+    }
+  }
+  @media (max-width: 410px) {
+    .home-content-D h1 {
+      font-size: 3.2rem;
+    }
+  }
+  
+
+/* src/components/ManualTransmission.module.css */
+
+.transmissionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #FF7F50, #FF6347, #FFD700, #00FF7F, #1E90FF, #8A2BE2);
+    background-size: 600% 600%;
+    animation: gradientAnimation 12s ease infinite;
+    min-height: 70vh;
+    padding: 20px;
+    border-radius: 30px;
+    max-width: 1640px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .gearBoxTitle {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .shifterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .shifter {
+    width: 100px;
+    height: 100px;
+    background: #ff0000;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .knob {
+    width: 60px;
+    height: 60px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gearList {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .gear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #c7c7c7;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gear:hover {
+    transform: translateY(-8px);
+    background-color: #FF6347;
+    color: white;
+  }
+  
+  .active {
+    transform: scale(1.2);
+    background-color: #000000 !important;
+    color: white !important;
+  }
+  
+  .selectedGear {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .selectedGear-enter {
+    opacity: 0;
+  }
+  
+  .selectedGear-exit {
+    opacity: 0;
+  }
+  
+  .manualContent{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, #0017c8, #c100bb);
+    border-radius: 20px;
+  }
+  .manualPara{
+    background-color: rgba(255, 255, 255, 0.269);
+    padding: 2rem 1rem;
+    border-radius: 20px;
+  }
+  .manualPara p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+   
+  }
+  .ManualCorousel{
+    font-family: 'Antonio' sans-serif;
+  }

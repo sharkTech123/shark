@@ -1,0 +1,281 @@
+.manualBanner {
+  background: url("./passplusbanner2.jpg");
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  padding: 4rem 0px;
+  border-radius: 20px;
+}
+
+.bannerImg {
+  max-width: 48%;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+.bannerImg img {
+  max-width: 150px;
+  height: 150px;
+  box-shadow: 0 0 20px rgba(206, 235, 255, 0.852);
+  width: 100%;
+  border-radius: 50%;
+}
+
+#homeDrivingImg1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#homeDrivingImg2 {
+  position: absolute;
+  top: -50px;
+  right: 200px;
+}
+
+@keyframes smoothUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Move the images up */
+  }
+  100% {
+    transform: translateY(0); /* Move the images back to original position */
+  }
+}
+#homeDrivingImg1:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+  cursor: pointer;
+}
+#homeDrivingImg2:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+  cursor: pointer;
+}
+#homeDrivingImg3:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+#homeDrivingImg1,
+#homeDrivingImg2 {
+  animation: smoothUpDown 2s ease-in-out infinite; /* Animation applied to both images */
+  /* Optional, to add some space between the images */
+}
+
+/* If you want to delay the second image */
+#homeDrivingImg2 {
+  animation-delay: 1s; /* Delay the second image's animation for staggered effect */
+}
+
+@media (max-width: 2100px) {
+  .home-content-D h1 {
+    font-size: 5.5rem;
+  }
+}
+@media (max-width: 1900px) {
+  .home-content-D h1 {
+    font-size: 4.7rem;
+  }
+}
+@media (max-width: 1600px) {
+  .home-content-D h1 {
+    font-size: 4.3rem;
+  }
+}
+@media (max-width: 1400px) {
+  .home-content-D h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-content-D h1 {
+    font-size: 4rem;
+  }
+  .home-content-D {
+    max-width: 70%;
+    width: 100%;
+  }
+  .banner-img {
+    max-width: 30%;
+    width: 100%;
+  }
+}
+@media (max-width: 840px) {
+  .home-content-D {
+    max-width: 80%;
+    width: 100%;
+  }
+  .bannerImg {
+    max-width: 20%;
+    width: 100%;
+  }
+}
+@media (max-width: 777px) {
+  .home-banner-flex {
+    flex-direction: column-reverse;
+  }
+  .home-content-D {
+    max-width: 100%;
+  }
+  .bannerImg {
+    max-width: 100%;
+    height: 50px;
+  }
+  .bannerImg img {
+    max-width: 100px;
+    height: 100px;
+  }
+
+  #home-drivingImg-1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  #home-drivingImg-2 {
+    position: absolute;
+    top: 20px;
+    right: 200px;
+  }
+}
+
+@media (max-width: 467px) {
+  .home-content-D h1 {
+    font-size: 3.5rem;
+  }
+  .home-content-D p {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .button-style {
+    padding: 8px 25px;
+    font-size: 1.2rem;
+  }
+  .home-bannerbnt-sec span {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 410px) {
+  .home-content-D h1 {
+    font-size: 3.2rem;
+  }
+}
+
+/* PassPlus.module.css */
+
+.passPlusContentcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0px;
+  height: 70vh;
+  background: linear-gradient(135deg, #ff7f50, #ff1493);
+  padding: 20px;
+}
+
+/* Card Styling */
+.passpluscard {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+  width: 100%;
+  transform-origin: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.passpluscard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
+.passplustitle {
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #ff7f50, #ff1493);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  animation: slideIn 1s ease-out;
+}
+
+/* Description Styling */
+.passplusdescription {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+/* Button Styling */
+.passplusbutton {
+  background: linear-gradient(45deg, #ff7f50, #ff1493);
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  letter-spacing: 1px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.passplusbutton:hover {
+  background-color: #ff6347;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.coursesSection {
+    padding: 50px 20px;
+   
+  }
+  
+  .coursesTitle {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    color: #cce5ff;
+    text-align: center;
+  }
+
+  
+  .manualContent{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, #c80064, #ff9bd5);
+    border-radius: 20px;
+  }
+  .manualPara{
+    background-color: rgba(255, 255, 255, 0.269);
+    padding: 2rem 1rem;
+    border-radius: 20px;
+  }
+  .manualPara p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+   
+  }
+  .ManualCorousel{
+    font-family: 'Antonio' sans-serif;
+  }

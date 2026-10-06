@@ -1,0 +1,155 @@
+/* DrivingChecks.module.css */
+.AdiModuleOnecontainer {
+    margin: 0 auto;
+    padding: 2rem 20px;
+    max-width: 1200px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .AdiModuleOneheader {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 2rem;
+  }
+  
+  .AdiModuleOneheader h1 {
+    font-size: 2.5rem;
+    color: #577a9d;
+  }
+  
+  .AdiModuleOnevideo {
+    margin-top: 20px;
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: #2980b9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .AdiModuleOneobjectives,
+  .AdiModuleOneintroduction,
+  .AdiModuleOnechecks,
+  .AdiModuleOneactivity {
+    margin-bottom: 40px;
+  }
+  .AdiModuleOneintroduction p{
+    background: linear-gradient(135deg, #00435d, #18016ce7);
+    border-radius: 6px;
+    font-size: 1.2rem;
+    color: white;
+    padding: 1rem;
+  }
+  .AdiModuleOneobjectives p{
+    background: linear-gradient(135deg, #00435d, #18016ce7);
+    border-radius: 6px;
+    font-size: 1.2rem;
+    color: white;
+    padding: 1rem;
+  }
+
+  .AdiModuleOneactivity p{
+    background: linear-gradient(135deg, #00435d, #18016ce7);
+    border-radius: 6px;
+    font-size: 1.2rem;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .AdiModuleOnecontainer  h2 {
+    font-size: 2rem;
+    color: #bdfff7;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #5d001f, #e80385e7);
+    border-radius: 6px;
+    padding: 1rem;
+  }
+  
+  .AdiModuleOnecontainer   h3 {
+    font-size: 1.5rem;
+    color: #9afff2;
+    margin-top: 20px;
+  }
+  .AdiModuleOnecheckList strong{
+    color: #04d0b8;
+  }
+  .AdiModuleOnecontainer  ul {
+    list-style-type: disc;
+    padding-left: 0;
+  }
+  
+  .AdiModuleOnecontainer  ul li {
+    font-size: 1.3rem;
+   color: #ecf0f1;
+    padding: 1rem;
+    background: linear-gradient(135deg, #8e3900, #e80325e7);
+    margin: 0.8rem 0px;
+    border-radius: 6px;
+  }
+  
+  .AdiModuleOnecontainer  .checkList {
+    margin-bottom: 25px;
+  }
+  
+  .AdiModuleOnecontainer  .checklist ul {
+    margin-left: 20px;
+  }
+  
+  .AdiModuleOnecontainer  .checklist li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+ .AdiModuleOneactivity {
+   
+   
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .AdiModuleOneactivity h2 {
+    color: #a6e4f2;
+  }
+  
+  .AdiModuleOneactivity p {
+    font-size: 1.1rem;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  .AdiModuleOnecontainer {
+    animation: fadeIn 1s ease-in-out;
+  }
+    
+  @media (max-width: 500px) {
+    .AdiModuleOneheader h1 {
+      font-size: 2rem;
+    }
+    .AdiModuleOnecontainer  h2{
+        font-size: 1.5rem;
+    }
+    .AdiModuleOnecontainer  ul li {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 428px) {
+    .AdiModuleOneheader h1 {
+      font-size: 1.7rem;
+    }
+    .AdiModuleOnecontainer  h2{
+        font-size: 1.3rem;
+    }
+    .AdiModuleOnecontainer  ul li {
+        font-size: 1rem;
+    }
+}

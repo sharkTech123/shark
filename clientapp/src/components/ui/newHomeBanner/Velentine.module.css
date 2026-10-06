@@ -1,0 +1,401 @@
+.valentineContainer {
+  width: 100%;
+  background: url(../../../assets/images/velentineday/bgImg.png);
+  height: 90vh;
+  background-size: cover;
+  position: relative;
+}
+
+.headingName {
+  position: relative;
+  width: 100%;
+  max-width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  padding: 1rem;
+}
+.headingName h1 {
+  z-index: 10;
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 800;
+  color: white;
+  filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.35)) saturate(1.3)
+    brightness(1.1);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.headingName h1 span {
+  color: rgb(255, 114, 196);
+}
+/* Big pumping heart */
+.bigHeart {
+  width: 400px;
+  position: absolute;
+  bottom: 30px;
+}
+#logoImgBanner {
+  padding: 2rem 2rem 0px 2rem;
+  max-width: 300px;
+  width: 100%;
+}
+#logoImgBanner P {
+  text-align: right;
+  color: white;
+  font-weight: 700;
+}
+.logoImgBanner {
+  max-width: 300px;
+  width: 100%;
+}
+
+/* Small hearts container */
+.smallHeartsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+.smallHeartsWrapper2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  position: absolute;
+  top: 60%;
+  left: 30%;
+}
+.smallHeartsWrapper3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  position: absolute;
+  top: 15%;
+  left: 1%;
+  z-index: 20;
+}
+
+.smallHeart {
+  width: 90px;
+  filter: drop-shadow(0 8px 14px rgba(112, 111, 111, 0.35)) saturate(1.3)
+    brightness(1.1);
+  transition: transform 0.3s ease;
+}
+
+.smallHeart:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0px 0px 12px rgba(255, 20, 120, 1))
+    drop-shadow(0px 6px 14px rgba(255, 60, 160, 0.9));
+}
+#tokenImg {
+  position: absolute;
+  right: 100px;
+  top: 10px;
+}
+#tokenImg2 {
+  position: absolute;
+  right: 250px;
+  top: 10px;
+}
+#tokenImg3 {
+  position: absolute;
+  right: 400px;
+  top: 10px;
+}
+.tokenImg {
+  max-width: 130px;
+  width: 100%;
+}
+
+@media (max-width: 1367px) {
+  .valentineContainer {
+    width: 100%;
+    background: url(../../../assets/images/velentineday/laptopbg2.png);
+    height: 85vh;
+    background-size: cover;
+  }
+
+  .headingName h1 {
+    z-index: 10;
+    text-transform: uppercase;
+    font-size: 4.2rem;
+    font-weight: 800;
+    color: white;
+    filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.35)) saturate(1.3)
+      brightness(1.1);
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .bigHeart {
+    width: 300px;
+    position: absolute;
+    bottom: 110px;
+  }
+  .smallHeartsWrapper3 {
+    display: none;
+  }
+}
+@media (max-width: 1167px) {
+  .tokenImg {
+    max-width: 100px;
+    width: 100%;
+  }
+
+  #tokenImg {
+    position: absolute;
+    right: 50px;
+  }
+  #tokenImg2 {
+    position: absolute;
+    right: 160px;
+  }
+  #tokenImg3 {
+    position: absolute;
+    right: 270px;
+  }
+}
+@media (max-width: 1067px) {
+  .valentineContainer {
+    width: 100%;
+    background: url(../../../assets/images/velentineday/tabbg.png);
+    height: 80vh;
+    background-size: cover;
+  }
+
+  .headingName h1 {
+    z-index: 10;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: white;
+    filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.35)) saturate(1.3)
+      brightness(1.1);
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .bigHeart {
+    width: 260px;
+    position: absolute;
+    bottom: 130px;
+  }
+
+  .smallHeart {
+    width: 70px;
+  }
+  .smallHeartsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+  }
+  .smallHeartsWrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 60%;
+    left: 30%;
+  }
+  .smallHeartsWrapper3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 40%;
+    left: 53%;
+    z-index: 20;
+  }
+}
+@media (max-width: 877px) {
+  .headingName h1 {
+    font-size: 3rem;
+  }
+  .tokenImg {
+    max-width: 90px;
+    width: 100%;
+  }
+
+  #tokenImg {
+    position: absolute;
+    right: 20px;
+  }
+  #tokenImg2 {
+    position: absolute;
+    right: 120px;
+  }
+  #tokenImg3 {
+    position: absolute;
+    right: 220px;
+  }
+}
+@media (max-width: 777px) {
+  .valentineContainer {
+    width: 100%;
+    background: url(../../../assets/images/velentineday/mobiletab.png);
+    height: 85vh;
+    background-size: cover;
+  }
+  .tokenImg {
+    display: none;
+  }
+
+  .headingName {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .headingName h1 {
+    font-size: 3.5rem;
+  }
+
+  .bigHeart {
+    width: 260px;
+    position: absolute;
+    bottom: 130px;
+  }
+
+  .smallHeart {
+    width: 70px;
+  }
+  .smallHeartsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 25%;
+    left: 8%;
+  }
+  .smallHeartsWrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 57%;
+    left: 40%;
+  }
+  .smallHeartsWrapper3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    z-index: 20;
+  }
+}
+@media (max-width: 620px) {
+  .smallHeartsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+  }
+
+  .smallHeartsWrapper3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 25%;
+    left: 75%;
+    z-index: 20;
+  }
+}
+@media (max-width: 620px) {
+  .smallHeartsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+  }
+
+  .smallHeartsWrapper3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 25%;
+    left: 75%;
+    z-index: 20;
+  }
+}
+
+@media (max-width: 460px) {
+  .headingName h1 {
+    font-size: 3rem;
+  }
+
+  .bigHeart {
+    width: 230px;
+    position: absolute;
+    bottom: 130px;
+  }
+  .valentineContainer {
+    width: 100%;
+    background: url(../../../assets/images/velentineday/mobile.png);
+    height: 85vh;
+    background-size: cover;
+  }
+  .smallHeartsWrapper {
+    display: none;
+  }
+
+  .smallHeartsWrapper3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 45%;
+    left: 65%;
+    z-index: 20;
+  }
+  .smallHeartsWrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    top: 57%;
+    left: 10%;
+  }
+}

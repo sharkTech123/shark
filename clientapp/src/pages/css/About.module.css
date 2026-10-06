@@ -1,0 +1,132 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.TcHomeBanner {
+  position: relative;
+  background: url("../../assets/images/aboutusBanner.jpg");
+  background-size: cover;
+  background-position: center;
+
+  padding: 200px 0;
+}
+
+.opicity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #000000d0;
+}
+/* Header/Blog Title */
+.Tcheader {
+  padding: 30px;
+  max-width: 1640px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+  position: sticky;
+  color: white;
+}
+.Tcheader h2 {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.aboutPageSection {
+  max-width: 1640px;
+  padding: 2rem 1rem;
+  margin: 0rem auto;
+  width: 100%;
+}
+.aboutPageSection h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: rgb(236, 241, 255);
+}
+
+.smartLearnerAboutPageContent {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #020071e8, #960039ee);
+  padding: 4rem 2rem;
+  gap: 30px;
+  width: 100%;
+  margin-top: 2rem;
+}
+.smartLearnerAboutPageContent img {
+  max-width: 40%;
+  max-height: 600px;
+  width: 100%;
+  border-radius: 20px;
+  filter: drop-shadow(1px 0 6px rgba(236, 236, 236, 0.37));
+}
+.aboutPageContent {
+  max-width: 60%;
+  width: 100%;
+}
+.aboutPageContent ul li {
+  color: rgb(199, 255, 236);
+  font-weight: 600;
+}
+.smartLearnerAboutPageContent p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  width: 100%;
+  text-align: left;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.smartLearnerAboutPageContent p span {
+  color: red;
+  font-weight: 600;
+}
+@media (max-width: 967px) {
+  .smartLearnerAboutPageContent {
+    flex-direction: column;
+  }
+  .smartLearnerAboutPageContent img {
+    max-width: 100%;
+    width: 100%;
+  }
+  .aboutPageContent {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .aboutPageSection h2 {
+    font-size: 3rem;
+  }
+  .smartLearnerAboutPageContent p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 467px) {
+  .aboutPageSection h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 727px) {
+  .TcHomeBanner {
+    padding: 160px 0px;
+  }
+  .Tcheader h2 {
+    font-size: 4rem;
+    font-weight: 900;
+  }
+}
+@media (max-width: 468px) {
+  .TcHomeBanner {
+    padding: 120px 0px;
+  }
+  .Tcheader h2 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+}

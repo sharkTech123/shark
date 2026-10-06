@@ -1,0 +1,173 @@
+/* SellSubscription.module.css */
+.subsContainerFlex {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+/* Main Container */
+.containerSubsadmin {
+  padding: 40px;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.containerSubsadmin2 {
+  padding: 30px 20px;
+  max-width: 550px;
+  width: 100%;
+
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Heading */
+.headerSubsadmin {
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: 500;
+  color: #6f19d2;
+}
+.headerSubsadmin2 p {
+  margin-bottom: 0px;
+}
+.headerSubsadmin2 {
+  margin-bottom: 14px;
+}
+.containerSubsadmin em {
+  font-size: 14px;
+}
+
+/* Search Input Section */
+.inputSectionSubsadmin {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.inputFieldSubsadmin {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Button Styling */
+.searchBtnSubsadmin {
+  width: 176px;
+  font-size: 1rem;
+  text-transform: none;
+  transition: background-color 0.3s ease;
+}
+
+.searchBtnSubsadmin:hover {
+  background-color: #1565c0;
+}
+
+/* Card Styling for User Info */
+.userDetailsCardSubsadmin {
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: #fafafa;
+  padding: 16px;
+}
+.userDetailsCardSubsadmin2 {
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: #fafafa;
+  padding: 2px;
+}
+
+.userTextSubsadmin {
+  margin-bottom: 8px;
+  color: #333;
+}
+.userTextSubsadmin strong {
+  margin-right: 8px;
+}
+
+.dividerSubsadmin {
+  margin: 16px 0;
+}
+
+/* Subscription Section */
+.subscriptionSelectSubsadmin {
+  margin-top: 16px;
+  margin-bottom: 1rem;
+}
+.subscriptionSelectSubsBox {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* Submit Button */
+.submitBtnSubsadmin {
+  border-radius: 4px;
+  width: 178px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: none;
+  font-weight: 500;
+  text-transform: none;
+  background-color: #d32f2f;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtnSubsadmin:hover {
+  background-color: #c2185b;
+}
+
+.submitBtnSubsadmin:disabled {
+  background-color: #e4e4e4;
+  cursor: not-allowed;
+}
+.subscriptionDetailsSec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.revolutbutton {
+  padding: 0.6rem 1rem;
+
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+}
+.revolutbutton:hover {
+  background-color: rgb(34, 31, 31);
+}
+.revolutbuttoncontainer {
+  margin-top: 1rem;
+  padding: 1rem 0.6rem;
+  border-radius: 5px;
+
+  background-color: white;
+}
+.revolutbuttoncontainer2 {
+  margin-top: 1rem;
+  padding: 1rem 0.6rem;
+  border-radius: 5px;
+
+  background-color: white;
+}
+.sellProductFlex {
+  display: flex;
+  align-items: center;
+  width: 800px;
+  gap: 20px;
+}
+.sellProductSelect {
+  width: 600px;
+}
+.sellProductFlex button {
+  width: 100px;
+}

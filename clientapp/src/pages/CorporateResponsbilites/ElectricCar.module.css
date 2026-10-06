@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ElectricCarScheme {
+  background-color: black;
+  padding-bottom: 10rem;
+}
+.csrPageFront {
+  background: url("../../assets/images/electric-carBanner.jpg");
+  color: white;
+  background-size: cover;
+  background-position: top;
+  border-radius: 10px;
+  padding: 10rem 1rem;
+  position: relative;
+}
+.eCSfrontSection {
+  color: white;
+
+  margin-bottom: 1rem;
+}
+.eCSfrontSection h2 {
+  font-size: 5rem;
+  color: white;
+  text-align: left;
+  position: sticky;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  font-weight: 700;
+  max-width: 1640px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;  
+  padding-bottom: 4rem;
+}
+
+.ecsheder {
+  position: sticky;
+}
+.csrPagesLd {
+  padding: 1rem;
+  position: sticky;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: 44%;
+  width: 100%;
+  background: linear-gradient(135deg, #00157199, #01764b76);
+  border-radius: 6px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 20px rgba(54, 54, 54, 0.656);
+}
+.csrPagesLd p {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+  text-align: left;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.eCs2ndSectionhead {
+  text-align: center;
+  padding: 2rem 0px;
+}
+.eCs2ndSectionhead h2 {
+  font-size: 4rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  color: rgb(0, 81, 0);
+  animation: 4s slide-left;
+}
+@keyframes slide-left {
+  from {
+    margin-right: -100%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+.eCs2ndSectionhead span {
+  color: rgb(172, 204, 255);
+  animation: 4s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+.eCs2ndSectionhead hr {
+  opacity: 1;
+  border: 2px solid white;
+}
+.csrPagesLd2 {
+  padding: 0.7rem;
+  max-width: 650px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  background: linear-gradient(135deg, #00157199, #01764b76);
+  border-radius: 6px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.csrPagesLd2 p {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.electricCarSchemeSection {
+  max-width: 1640px;
+  padding: 1rem;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.ecs2ndimgSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  max-width: 1340px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  place-items: center;
+  align-items: center;
+  gap: 20px;
+}
+.ecs2ndimgSection img {
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 20px rgb(95, 95, 95);
+  border-radius: 10px;
+}
+
+.csrPagesLd22 {
+  padding: 0.7rem;
+  margin: 2rem 0px;
+  width: 100%;
+  background: linear-gradient(135deg, #00157199, #01764b76);
+  border-radius: 6px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.csrPagesLd22 p {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media (max-width: 1000px) {
+}
+@media (max-width: 900px) {
+  .ecs2ndListSection p {
+    font-size: 1rem;
+    color: white;
+  }
+}
+@media (max-width: 780px) {
+  .eCSfrontSection h2 {
+    font-size: 4rem;
+  }
+  .eCs2ndSectionhead h2 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 650px) {
+  .eCSfrontSection h2 {
+    font-size: 3.5rem;
+  }
+  .eCs2ndSectionhead h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 428px) {
+  .eCSfrontSection h2 {
+    font-size: 2.8rem;
+  }
+  .eCs2ndSectionhead h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 394px) {
+  .eCSfrontSection h2 {
+    font-size: 2rem;
+  }
+}
+/* ////////////////////////////// */
+.textMainSection {
+  max-width: 1640px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2rem 1rem;
+}
+.textEscsection {
+  max-width: 800px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2rem;
+}
+.textEscsection p span {
+  color: rgb(3, 154, 3);
+}
+
+.csrPagesLd232 {
+  padding: 0.7rem 2rem;
+
+  width: 100%;
+  background: linear-gradient(135deg, #4b066e99, #06754c76);
+  border-radius: 6px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.csrPagesLd232 p {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+  text-align: justify;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.treeImgsSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  position: relative;
+}
+
+.treeImgsSection img {
+  max-width: 200px;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: slideUp 3s forwards;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(153, 153, 153, 0.5));
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.textMainSection hr {
+  opacity: 1;
+  border: 2px solid white;
+}
+.escBDSection {
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2rem 1rem;
+}
+.escBdHeading hr {
+  opacity: 1;
+  border: 2px solid white;
+  margin-top: 2rem;
+}
+.escBdHeading h2 {
+   color: rgb(172, 204, 255);;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+}
+.escBenifits {
+  padding-top: 2rem;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.escBDDiv {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+.escBDDiv section {
+  padding: 1rem;
+  background: linear-gradient(135deg, #100386, #2c70d0);
+  border-radius: 40px;
+}
+
+.escBDDiv h2 {
+  color: rgb(199, 237, 255);
+  border-radius: 10px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+#escBDDivcd h2{
+  background: linear-gradient(135deg, #6b99d9, #1400c9);
+
+}
+.escBDDiv p {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+}
+#escBDDivcd {
+  animation: 5s slide-right;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+#escBDDivdc {
+  animation: 5s slide-left;
+}
+@keyframes slide-left {
+  from {
+    margin-right: -100%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+.escBDDiv div {
+  padding: 1rem;
+  background: linear-gradient(135deg, #024029, #2cd06e);
+  border-radius: 40px;
+}
+.escBDDiv div h2 {
+  font-size: 2.3rem;
+  text-align: center;
+  color: white;
+}
+#escBDDivdc h2{
+  background: linear-gradient(135deg, #2cd06e, #024029);
+
+}
+.escBDDiv div p {
+  color: white;
+  font-size: 1.2rem;
+}
+@media (max-width: 828px) {
+  .escBDDiv div h2 {
+    font-size: 2.5rem;
+  }
+  .treeImgsSection {
+    gap: 30px;
+  }
+}
+@media (max-width: 728px) {
+  .treeImgsSection img {
+    max-width: 170px;
+    width: 100%;
+  }
+  .textEscsection p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 680px) {
+  .escBdHeading h2 {
+    font-size: 2.5rem;
+  }
+  .escBenifits {
+    flex-direction: column;
+  }
+
+  .escBDDiv div p {
+    font-size: 1rem;
+  }
+  .escBDDiv section p {
+    font-size: 1rem;
+  }
+  .escBDDiv section h2 {
+    font-size: 2.5rem;
+  }
+  .escBDDiv div h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 580px) {
+  .treeImgsSection img {
+    max-width: 120px;
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .treeImgsSection img {
+    max-width: 80px;
+    width: 100%;
+  }
+}
+.csr3rdDivSecLinks {
+  max-width: 1140px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  gap: 50px;
+}
+.csr3rdDivSecLinks a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-decoration: none;
+  transition: border 0.5s ease;
+  border-radius: 10px;
+}
+.csr3rdDivSecLinks a:nth-child(1) {
+ 
+  background: linear-gradient(135deg, #2172e4, #1400c9);
+}
+.csr3rdDivSecLinks a:nth-child(2) {
+ 
+  background: linear-gradient(135deg, #024029, #2cd06e);
+}
+.csr3rdDivSecLinks a:nth-child(1):hover {
+  border: 1px solid #66a5fe;
+}
+.csr3rdDivSecLinks a:nth-child(2):hover {
+  border: 1px solid #2cd06e;
+}
+.csr3rdDivSecLinks p {
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 0px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.csr3rdDivSecLinks img {
+  max-width: 220px;
+  width: 100%;
+}

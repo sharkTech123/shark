@@ -1,0 +1,148 @@
+/* SingleBlog.module.css */
+.singleblogPage{
+  max-width: 1500px;
+  margin: 0px auto;
+  padding: 4rem 1rem;
+  font-family: 'Arial', sans-serif;
+
+}
+.singleblogPageContainer {
+  
+
+ display: flex;
+ gap: 20px;
+
+ 
+ 
+ 
+}
+.singleblogContainer{
+  width:60%;
+  border: 1px solid white;
+ 
+}
+
+.blogContentContainer{
+  padding: 20px;
+}
+
+.headerBlog {
+  
+  margin-bottom: 30px;
+  animation: fadeIn 1s ease-out;
+}
+
+.blogTitle {
+  font-size: 2.5rem;
+  color: #ff0000;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+
+
+.metaInfo {
+  font-size: 1rem;
+  color: #777;
+  margin-top: 10px;
+}
+
+.author {
+  margin-right: 15px;
+}
+
+.date {
+  font-weight: 600;
+}
+
+.contentBlog {
+  margin-top: 40px;
+}
+
+.paragraphBlog {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #c4c4c4;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease-out;
+  
+}
+
+
+
+.blogImage {
+  width: 100%;
+  height: 500px;
+ 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ================================================ */
+.blogListContainer{
+  width: 40%;
+ 
+ max-height: 1000px;
+ overflow-y: scroll;
+  }
+.blogListSection{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 10px;
+}
+.blogListContent{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  align-items: center;
+ 
+  color: white;
+  gap: 15px;
+  background-color: #161616;
+  padding: 15px 10px;
+  transition: transform 0.2s;
+}
+.blogListContent:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 55px 5px rgba(255, 255, 255, 0.203);
+  
+}
+.listblogImgCon{
+  max-width: 100%;
+}
+.blogListContent img{
+ 
+  height: 150px;
+  width: 100%;
+}
+.blogsDetails{
+  max-width: 100%;
+}
+@media (max-width: 800px) {
+.singleblogPageContainer{
+  flex-direction: column;
+}
+.singleblogContainer{
+  width: 100%;
+}
+.blogListContainer{
+  width: 100%;
+}
+}

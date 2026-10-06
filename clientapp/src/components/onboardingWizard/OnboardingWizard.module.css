@@ -1,0 +1,371 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 50% 40%, rgba(108, 92, 231, 0.25), rgba(10, 10, 20, 0.65));
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   z-index: 300000000;
+  padding: 16px;
+  animation: overlay-in 220ms ease-out;
+}
+
+@keyframes overlay-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.dialog {
+  background: linear-gradient(180deg, #ffffff 0%, #f8f7ff 100%);
+  border-radius: 22px;
+  width: 100%;
+  max-width: 430px;
+  max-height: 85vh;
+
+   display: flex;
+  flex-direction: column;
+
+
+   overflow: hidden; /* Prevent dialog scrolling */
+  padding: 30px 26px 20px;
+  position: relative;
+  box-shadow:
+    0 2px 0 rgba(255, 255, 255, 0.6) inset,
+    0 30px 60px -12px rgba(76, 29, 149, 0.35),
+    0 12px 24px -8px rgba(0, 0, 0, 0.25);
+  animation: pop-in 380ms cubic-bezier(0.34, 1.56, 0.64, 1);
+ 
+}
+
+@keyframes pop-in {
+  0% { opacity: 0; transform: translateY(24px) scale(0.9) rotateX(6deg); }
+  100% { opacity: 1; transform: translateY(0) scale(1) rotateX(0deg); }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f1effc;
+  border: none;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  color: #6c5ce7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 150ms ease, background 150ms ease;
+}
+.closeBtn:hover {
+  background: #e4e0fc;
+  transform: rotate(90deg) scale(1.05);
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0 0 20px;
+  padding-right: 26px;
+  background: linear-gradient(90deg, #6c5ce7, #a855f7 60%, #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: -0.01em;
+}
+
+.loading,
+.empty {
+  padding: 26px 0;
+  color: #888;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.error {
+  padding: 14px;
+  background: #fdecea;
+  color: #b3261e;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.retryBtn {
+  background: #b3261e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.optionList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+    flex: 1;
+  overflow-y: auto;
+   max-height: 350px;
+
+  perspective: 800px;
+}
+
+.optionItem {
+  animation: item-in 320ms ease backwards;
+  animation-delay: calc(var(--i) * 70ms);
+}
+
+@keyframes item-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.optionBtn {
+  --tiltX: 0deg;
+  --tiltY: 0deg;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 16px;
+  background: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  cursor: pointer;
+  text-align: left;
+  transform-style: preserve-3d;
+  transform: perspective(800px) rotateX(var(--tiltX)) rotateY(var(--tiltY)) translateZ(0);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.8) inset,
+    0 6px 14px -4px rgba(76, 29, 149, 0.18),
+    0 2px 4px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 180ms ease, transform 80ms ease;
+}
+
+.optionBtn:hover {
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.8) inset,
+    0 14px 28px -6px rgba(76, 29, 149, 0.3),
+    0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.optionBtn:active {
+  transform: perspective(800px) scale(0.97) translateY(1px);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.8) inset,
+    0 4px 8px -2px rgba(76, 29, 149, 0.25);
+}
+
+.optionBtn:focus-visible {
+  outline: 2px solid #a855f7;
+  outline-offset: 2px;
+}
+
+.iconBadge {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.4) inset,
+    0 4px 10px -2px rgba(0, 0, 0, 0.25);
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  color: #ffffff;
+}
+
+.grad1 { background: linear-gradient(135deg, #6c5ce7, #a855f7); }
+.grad2 { background: linear-gradient(135deg, #ec4899, #f43f5e); }
+.grad3 { background: linear-gradient(135deg, #06b6d4, #3b82f6); }
+.grad4 { background: linear-gradient(135deg, #f59e0b, #f97316); }
+.grad5 { background: linear-gradient(135deg, #10b981, #22c55e); }
+.grad6 { background: linear-gradient(135deg, #8b5cf6, #ec4899); }
+
+.optionLabel {
+  flex: 1;
+}
+
+.chevron {
+  color: #b3aef0;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 22px;
+  padding-top: 14px;
+  border-top: 1px dashed #e6e2fb;
+}
+
+.backBtn,
+.skipBtn {
+  background: none;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #6c5ce7;
+  padding: 6px 4px;
+  transition: opacity 150ms ease;
+}
+
+.backBtn:hover,
+.skipBtn:hover {
+  opacity: 0.7;
+}
+
+/* ---------------------------------------------------------------- */
+/* Responsive: fluid sizing across pc / laptop / mini-laptop / tablet */
+/* ---------------------------------------------------------------- */
+
+.dialog {
+  width: min(92vw, 430px);
+}
+
+.title {
+  font-size: clamp(1.05rem, 1rem + 1vw, 1.3rem);
+}
+
+.iconBadge {
+  width: clamp(36px, 8vw, 42px);
+  height: clamp(36px, 8vw, 42px);
+}
+
+.icon {
+  width: clamp(18px, 4vw, 22px);
+  height: clamp(18px, 4vw, 22px);
+}
+
+.optionBtn {
+  min-height: 44px; /* comfortable touch target on any device */
+  padding: clamp(11px, 2.5vw, 14px) clamp(12px, 3vw, 16px);
+  font-size: clamp(0.9rem, 0.85rem + 0.4vw, 1rem);
+}
+
+/* Large desktop monitors: a touch more breathing room, not just a wider box */
+@media (min-width: 1440px) {
+  .dialog {
+    width: min(30vw, 460px);
+    padding: 34px 30px 22px;
+  }
+}
+
+/* Laptops / mini-laptops (small windows, 13"-14" screens) */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .dialog {
+    width: min(50vw, 420px);
+  }
+}
+
+/* Tablets, portrait and landscape */
+@media (min-width: 481px) and (max-width: 768px) {
+  .dialog {
+    width: min(70vw, 400px);
+    padding: 26px 22px 18px;
+  }
+}
+
+/* Phones: switch to a bottom sheet instead of a floating centered box —
+   easier to reach with a thumb and avoids cramped centered modals on
+   small viewports. */
+@media (max-width: 480px) {
+  .overlay {
+    align-items: center;
+    padding: 6px;
+  }
+
+  .dialog {
+    width: 100%;
+    max-width: 100%;
+    max-height: 88vh;
+    border-radius: 22px 22px;
+    padding: 22px 18px calc(16px + env(safe-area-inset-bottom));
+    animation: sheet-in 260ms cubic-bezier(0.32, 0.72, 0, 1);
+  }
+
+  .title {
+    font-size: 1.1rem;
+    padding-right: 30px;
+  }
+
+  .closeBtn {
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .optionBtn {
+    padding: 13px 14px;
+  }
+
+  .footer {
+    padding-bottom: 4px;
+  }
+}
+
+@keyframes sheet-in {
+  from { opacity: 0; transform: translateY(100%); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Very small phones (older/small Android, iPhone SE) */
+@media (max-width: 360px) {
+  .iconBadge {
+    width: 34px;
+    height: 34px;
+  }
+  .optionLabel {
+    font-size: 0.9rem;
+  }
+}
+
+/* Touch devices: no cursor to drive the 3D tilt, so don't leave a resting
+   tilt state, and skip the hover-only shadow lift (tap gives :active instead). */
+@media (hover: none), (pointer: coarse) {
+  .optionBtn {
+    transform: none;
+  }
+  .optionBtn:hover {
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.8) inset,
+      0 6px 14px -4px rgba(76, 29, 149, 0.18),
+      0 2px 4px rgba(0, 0, 0, 0.06);
+  }
+}
+
+/* Respect users who've asked the OS to reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .overlay,
+  .dialog,
+  .optionItem,
+  .closeBtn {
+    animation: none !important;
+    transition: none !important;
+  }
+}

@@ -1,0 +1,71 @@
+.cbdEventsComponent {
+  padding: 3rem 1px;
+  max-width: 1340px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.cbdbanner {
+  padding: 2rem 0px;
+}
+.cbdbanner h2 {
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.cbdContentBoxflex {
+  display: flex;
+  gap: 20px;
+  padding: 2rem 1rem;
+}
+.cbdContentBox h1 {
+  color: white;
+}
+
+.cbdContentBoxflex img {
+  max-width: 600px;
+  width: 100%;
+}
+.cbdContent a button {
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 6px;
+}
+.cbdContent a button:hover {
+  transform: scale(1.01);
+  transition: ease-in-out 0.3s;
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(229, 239, 255);
+  box-shadow: 0 0 20px #a9b5c2db;
+}
+.cbdContent {
+  max-width: 50%;
+  width: 100%;
+  padding: 1rem;
+}
+.cbdContent h2 {
+  font-size: 24px;
+  font-weight: 500px;
+  color: white;
+}
+.cbdContent p {
+  padding: 1rem 0px;
+  margin-bottom: 0px;
+  color: rgb(216, 243, 255);
+}
+@media (max-width: 767px) {
+  .cbdContentBoxflex {
+    flex-direction: column;
+  }
+  .cbdContentBoxflex img {
+    max-width: 100%;
+    width: 100%;
+  }
+  .cbdContent {
+    max-width: 100%;
+    width: 100%;
+  }
+}

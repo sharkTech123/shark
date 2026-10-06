@@ -1,0 +1,705 @@
+.cartPage {
+  background: linear-gradient(
+    135deg,
+    hwb(187 40% 0%),
+    #57005a,
+    #2e0063,
+    #020025
+  );
+  background-size: 600% 600%;
+  animation: gradientAnimation 12s ease infinite;
+  min-height: 70vh;
+  padding-bottom: 4rem;
+}
+.cartContainer {
+  max-width: 1440px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2rem 1rem;
+}
+.cartheading {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+.cartheading h2 {
+  padding: 2rem 1rem;
+  font-size: 4rem;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+@media (max-width: 577px) {
+  .cartheading h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 477px) {
+  .cartheading h2 {
+    font-size: 2.5rem;
+  }
+}
+.cartContentContainer {
+  display: flex;
+  gap: 30px;
+}
+.cartItemsContainer {
+  max-width: 70%;
+  padding: 2rem;
+
+  width: 100%;
+  overflow-x: auto;
+  background-color: #020025ce;
+  border-radius: 10px; /* Enable horizontal scrolling on small screens */
+}
+
+.cartTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  min-width: 600px; /* Ensures the table is wide enough on small screens */
+}
+
+.cartTable th,
+.cartTable td {
+  padding: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.cartTable th {
+  color: rgb(255, 250, 250);
+  border-bottom: 1px solid white;
+}
+
+.cartTable td {
+  padding: 2rem 0px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: white;
+  font-weight: 500;
+}
+
+.quantityButton {
+  background-color: #d7e9fd;
+
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#countssss {
+  padding: 1rem;
+  width: 20px;
+}
+
+.quantityButton:hover {
+  background-color: #6867c2;
+  transform: scale(1.1);
+  color: white;
+}
+
+.totalContainer {
+  margin-top: 20px;
+}
+
+.totalContainer h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .cartContainer {
+    width: 90%;
+  }
+
+  .cartTable th,
+  .cartTable td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .tableWrapper {
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 480px) {
+  .cartContainer {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .cartTable th,
+  .cartTable td {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  .cartTable {
+    min-width: 400px;
+  }
+}
+
+/* //////////////////////////////////// */
+
+#fontAntonio {
+  font-family: "Antonio", sans-serif;
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  color: white;
+  padding: 0px 1rem 8rem 1rem;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.carIconImg {
+  height: 100px;
+  width: 100px;
+}
+
+#carImg {
+  /* max-width: 800px; */
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+.cartIconCarImg {
+  max-width: 200px;
+}
+@media (max-width: 577px) {
+  .carIconImg {
+    height: 80px;
+    width: 80px;
+  }
+}
+@media (max-width: 477px) {
+  .carIconImg {
+    height: 60px;
+    width: 60px;
+  }
+  #questityCartBtn {
+    width: 0px;
+  }
+}
+.cartoverflow {
+  overflow: auto;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+}
+
+#cartTable {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+  width: 100%;
+}
+#cartTableDetails {
+  padding: 0.5rem 4rem;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+}
+#cartTableDetailsd {
+  padding: 1.2rem 4rem;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+}
+#cartTable hr {
+  border: 1px solid red;
+  opacity: 1;
+  margin: 0px;
+}
+
+#cartTableBtn {
+  padding: 18.5px 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+}
+#btnCartBox button {
+  background-color: #b10004;
+  border: none;
+}
+#btnCartBox button:hover {
+  background-color: red;
+}
+.quantityControl button {
+  padding: 1px 1rem;
+  border: none;
+}
+.quantityControl span {
+  padding: 1px 2rem;
+}
+#cartTableDetailsDiv {
+  padding: 2rem 0px;
+  margin-top: 2rem 0px;
+}
+@media (max-width: 910px) {
+  #cartTable {
+    justify-content: flex-start;
+  }
+  #cartTableBtn {
+    margin-top: 4px;
+    padding: 5px 0.5rem;
+  }
+  #cartTableDetailsd {
+    margin-top: 4px;
+    font-size: 1rem;
+    padding: 0.4rem 0.5rem;
+  }
+}
+@media (max-width: 500px) {
+  #cartTableDetails {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+  }
+  #cartTableBtn {
+    margin-top: 4px;
+    padding: 5px 0.5rem;
+  }
+  .quantityControl span {
+    padding: 1px 1rem;
+  }
+  .quantityControl button {
+    padding: 1px 0.7rem;
+    border: none;
+  }
+}
+
+/* //////////////////////////////////// */
+
+.cartBtnsContainer {
+  max-width: 30%;
+  width: 100%;
+  background: linear-gradient(135deg, #807eff, #000c52);
+  padding: 2rem;
+  border-radius: 10px;
+  max-height: 700px;
+  height: 100%;
+}
+.basketHeadingTitles h2 {
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-weight: 600;
+}
+.btnBasketbtnws {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.btnBasketbtnws p {
+  color: white;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+.btnBasketbtnws p:hover {
+  color: #8d39ee;
+}
+#couponCart {
+  display: flex;
+
+  max-width: 960px;
+  gap: 50px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cartCouponInputs {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 2rem 0px;
+}
+.cartCouponInputs input {
+  padding: 1rem 1rem;
+  border-radius: 4px;
+  margin: 1rem 0px;
+}
+.cartCouponInputs button {
+  padding: 1rem 0px;
+}
+#couponCart hr {
+  border: 1px solid red;
+  opacity: 1;
+  margin: 0px;
+}
+.basketDetailsCart {
+  display: flex;
+  gap: 100px;
+}
+.basketDetailsCart hr {
+  border: 1px solid red;
+  opacity: 1;
+  margin: 0px;
+}
+.basketHeadingTitle p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.basketHeadingTitle div img {
+  max-width: 50px;
+  width: 100%;
+  margin: 0px 1rem;
+}
+#revolutLogo {
+  max-width: 100px;
+}
+
+.basketbtnProceed {
+  background-color: #b2beff;
+  color: black;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+}
+.basketbtnProceed:hover {
+  background-color: #282385;
+  color: white;
+  transition: ease-in-out 0.3s;
+  border: 1px solid #d4e1ff;
+}
+.basketbtnProceed2 {
+  margin: 1rem 0px;
+  background-color: #ffb7b2;
+  color: black;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+}
+.basketbtnProceed2:hover {
+  background-color: #631805;
+  color: white;
+  transition: ease-in-out 0.3s;
+  border: 1px solid #d4e1ff;
+}
+.basketHeadingTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-top: 2rem;
+}
+.basketHeadingTitle span {
+  margin: 0.5rem 0px;
+}
+.basketDiv button {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1rem 0px;
+}
+@media (max-width: 1228px) {
+  .basketbtnProceed {
+    padding: 0.5rem 0.8rem;
+  }
+}
+@media (max-width: 1200px) {
+  .btnBasketbtnws {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .btnBasketbtnws p {
+    padding: 0.5rem 0.2rem;
+  }
+}
+
+@media (max-width: 928px) {
+  .cartContentContainer {
+    flex-direction: column;
+  }
+  .btnBasketbtnws {
+    flex-direction: row;
+    align-items: center;
+    gap: 0px;
+  }
+  .btnBasketbtnws p {
+    padding: 0px;
+  }
+  .cartItemsContainer {
+    max-width: 100%;
+    width: 100%;
+  }
+  .cartBtnsContainer {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  .basketDetailsCart {
+    gap: 50px;
+  }
+}
+@media (max-width: 728px) {
+  #couponCart {
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px 1rem;
+  }
+  .cartCouponInputs {
+    margin: 0.5rem 0px;
+    max-width: 700px;
+    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .cartCouponInputs input {
+    max-width: 350px;
+    width: 100%;
+  }
+  .cartCouponInputs button {
+    width: 100%;
+    padding: 0.5rem 0px;
+    margin: 1rem 0px;
+  }
+  .basketDetailsCart {
+    justify-content: space-evenly;
+    gap: 0px;
+  }
+}
+@media (max-width: 408px) {
+  .btnBasketbtnws {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .btnBasketbtnws p {
+    padding: 0.5rem 0.2rem;
+  }
+}
+.emptyCartMessage {
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  min-height: 300px;
+  text-align: center;
+  font-size: 22px;
+  color: #969accce;
+  padding: 20px;
+}
+.emptyCartTooltip {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 12px;
+  width: 200px;
+}
+
+.btnBasketbtnws:hover .emptyCartTooltip {
+  visibility: visible;
+  opacity: 1;
+}
+.checkBoxContainer {
+  padding: 2rem 0px;
+  color: white;
+}
+.cartContainerFooter {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.cartContainerFooter p {
+  color: rgba(255, 255, 255, 0.734);
+  text-align: center;
+}
+.couponInputdiscount {
+  padding: 0.5rem;
+  border: 1px solid rgba(111, 111, 111, 0.82);
+}
+.couponInputdiscountBtn {
+  padding: 0.5rem;
+  border: none;
+  background-color: #000c52;
+  color: white;
+  margin-left: 0.5rem;
+}
+.couponInputdiscountBtn:hover {
+  background-color: #6867c2;
+  border: 1px solid white;
+}
+@media (max-width: 1340px) {
+  .couponInputdiscount {
+    width: 100%;
+  }
+  .couponInputdiscountBtn {
+    margin-left: 0px;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+}
+@media (max-width: 927px) {
+  .couponInputdiscount {
+    max-width: 250px;
+    width: 100%;
+  }
+  .couponInputdiscountBtn {
+    margin-left: 0.5rem;
+    margin-top: 0px;
+    max-width: 150px;
+    width: 100%;
+  }
+}
+@media (max-width: 560px) {
+  .couponInputdiscount {
+    max-width: 100%;
+    width: 100%;
+  }
+  .couponInputdiscountBtn {
+    margin-left: 0px;
+    margin-top: 0.5rem;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.revolutbutton {
+  padding: 0.6rem 1rem;
+
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+}
+.revolutbutton:hover {
+  background-color: rgb(34, 31, 31);
+}
+.revolutbuttoncontainer {
+  margin-top: 1rem;
+  padding: 1rem 0.6rem;
+  border-radius: 5px;
+  border: 1px solid rgba(15, 15, 15, 0.685);
+  background-color: white;
+}
+.revolutbuttoncontainer2 {
+  margin-top: 1rem;
+  padding: 1rem 0.6rem;
+  border-radius: 5px;
+
+  background-color: white;
+}
+
+
+.Klarnawrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.klarnaButton {
+  background-color: #FFB3C7;
+  color: #17120F;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  
+}
+
+.buttonRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.loadingRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid #17120f33;
+  border-top: 3px solid #17120F;
+  border-radius: 50%;
+
+  display: inline-block;
+}
+
+.errorBox {
+  background-color: #fff0f0;
+  border: 1px solid #ffcccc;
+  color: #cc0000;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.klarnainfoText {
+  font-size: 12px;
+  color: #777;
+  text-align: center;
+  margin: 0;
+}
+
+/* Spinner Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,22 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+.slide,
+.slide img {
+  max-width: 500px;
+  width: 100%;
+  height: 500px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+ 
+}
+.slide {
+  transition: 0.5s;
+  transform: scale(0.7);
+  filter: blur(5px);
+}
+.slide-active {
+  filter: blur(0px);
+  opacity: 1;
+  transform: scale(1.1);
+}

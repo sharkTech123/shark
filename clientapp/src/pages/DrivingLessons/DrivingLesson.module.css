@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ////////////////////// */
+.drivingLessonsPage {
+  background-color: black;
+  padding-bottom: 1rem;
+  font-family: "Antonio", sans-serif;
+}
+.DrivingLessonsPagedivFront {
+  position: relative;
+  background-image: url("../../assets/images/dlbannerimg.png");
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+
+  padding: 120px 0;
+}
+.opicity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #000000d0;
+}
+.DrivingLessonsSectionFront {
+  max-width: 1400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: sticky;
+  text-align: center;
+  display: flex;
+
+  flex-direction: column;
+  gap: 100px;
+}
+#dLFrontHeading h2 {
+  font-size: 5rem;
+  font-family: "Antonio", sans-serif;
+  color: #ed2025;
+}
+#dLFrontHeading h2 span {
+  color: rgb(255, 238, 0);
+}
+.dLFrontHeadingPara {
+  border-radius: 30px;
+  background-color: rgb(255, 238, 0);
+  padding: 1rem;
+
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+.dLFrontHeadingPara p {
+  margin-bottom: 0px;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+#dLFrontHeading h2 span {
+  animation: 3s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@media (max-width: 1200px) {
+  #dLFrontHeading h2 {
+    font-size: 4.5rem;
+  }
+  #dLFrontImg img {
+    max-width: 320px;
+    width: 100%;
+  }
+}
+@media (max-width: 1050px) {
+  #dLFrontHeading h2 {
+    font-size: 3.7rem;
+  }
+  #dLFrontImg img {
+    max-width: 320px;
+    width: 100%;
+  }
+}
+@media (max-width: 850px) {
+  #dLFrontHeading h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 750px) {
+  #dLFrontHeading h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 480px) {
+  #dLFrontHeading h2 {
+    font-size: 2rem;
+  }
+}
+
+/* ////////////////////////////////////// */
+.drivingLessonsCd {
+  max-width: 1400px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 20px;
+}
+.drivingLessonsCd section {
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #ed2025;
+  padding: 1rem 1rem;
+  margin: 2rem 0px;
+  text-decoration: none;
+}
+.drivingLessonsCd section p {
+  margin: 0px;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Antonio", sans-serif;
+}
+#IconsS {
+  font-size: 1.8rem;
+
+  color: white;
+}
+
+.whyChooseSmlGHeading {
+  padding: 1rem 0px;
+  text-align: center;
+}
+.whyChooseSmlGHeading h2 {
+  font-size: 3rem;
+  color: white;
+}
+.whyChooseSmlListdiv {
+  padding: 1rem 0px;
+  /* background-color: rgb(220, 220, 220); */
+  color: white;
+}
+.whyChooseSmlLists {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 1rem;
+}
+.whyChooseSmlLists p {
+  font-size: 2rem;
+}
+@media (max-width: 728px) {
+  .whyChooseSmlGHeading h2 {
+    font-size: 2rem;
+  }
+  .whyChooseSmlLists p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 428px) {
+  .whyChooseSmlGHeading h2 {
+    font-size: 2rem;
+  }
+  .whyChooseSmlLists p {
+    font-size: 1.2rem;
+  }
+}
+/* ///////////////////////images caursel //////////////////// */
+.imageSliderContainer {
+  padding: 2rem 0px;
+}
+.imageSliderContainer hr {
+  border: 2px solid #ed2025;
+  opacity: 1;
+}
+.imageSliderContainer h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.imgSlider img {
+  max-width: 300px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  width: 100%;
+}
+/* /////////////////////////////////////////////// */
+.dManualSection hr {
+  opacity: 1;
+  border: 2px solid #ed2025;
+}
+.dManualSections {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.dManualDiv {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.dManualDiv h2 {
+  font-size: 3.5rem;
+  color: white;
+}
+.dManualDiv img {
+  max-width: 50px;
+  width: 100%;
+  animation: slideFromLeft 1s ease-out, rotate 2s linear;
+}
+
+.dManualDiv img:nth-child(5) {
+  animation-delay: 8s;
+}
+.dManualDiv img:nth-child(4) {
+  animation-delay: 6s;
+}
+.dManualDiv img:nth-child(3) {
+  animation-delay: 4s;
+}
+.dManualDiv img:nth-child(2) {
+  animation-delay: 2s;
+}
+.dManualDiv img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.manualPList {
+  padding: 0px 2rem;
+}
+.manualPList p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 478px) {
+  .dManualDiv h2 {
+    font-size: 3rem;
+  }
+  .manualPList p {
+    font-size: 1rem;
+  }
+  .dManualDiv img {
+    max-width: 40px;
+    width: 100%;
+  }
+}
+@media (max-width: 438px) {
+  .dManualDiv h2 {
+    font-size: 2.5rem;
+  }
+  .dManualDiv img {
+    max-width: 30px;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .dManualDiv img {
+    max-width: 25px;
+    width: 100%;
+  }
+}
+@media (max-width: 378px) {
+  .dManualDiv img {
+    max-width: 20px;
+    width: 100%;
+  }
+}
+/* ///////////////////////partners section /////////////////// */
+.ourPartnersSection {
+  background-image: url("../../assets/images/ourpartners.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.bgOverlay {
+  background-color: black;
+  opacity: 0.2;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.ourPartnersSection h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+
+  position: sticky;
+}
+.partnerSection {
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  background-color: #ffffffe7;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+}
+
+.partnerSection img {
+  width: 150px;
+  aspect-ratio: 1/1;
+  margin: 0px 1rem;
+  object-fit: contain;
+
+  position: sticky;
+}
+
+@media (max-width: 934px) {
+  .partnerSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+@media (max-width: 780px) {
+  .partnerSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 428px) {
+  .ourPartnersSection h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+  }
+  .partnerSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+}
+/* //////////////////////// */
+.whyChooseText {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.whyChooseText p {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .whyChooseText p {
+    font-size: 2rem;
+  }
+  .starImgContainer img {
+    max-width: 95px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .carContainer h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 618px) {
+  .listContent span img {
+    max-width: 70px;
+    width: 100%;
+  }
+  .listContent li {
+    padding: 0.2rem;
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #fff;
+  }
+}
+@media (max-width: 482px) {
+  .whyChooseText p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 452px) {
+  .whyChooseText p {
+    font-size: 1.5rem;
+  }
+}

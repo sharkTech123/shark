@@ -1,0 +1,281 @@
+.AdiPartOne {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(255, 255, 255);
+
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+
+.AdiPartOne ul {
+  margin-bottom: 0px;
+}
+.imageSection {
+  position: relative;
+  width: 100%;
+
+  background-image: url(../../../assets/images/pdibanner3.jpg);
+  background-position: bottom;
+  background-size: cover;
+  border-radius: 10px;
+}
+.opicity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #000000;
+}
+.maincontent {
+  max-width: 1640px;
+  width: 100%;
+  padding: 100px 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  position: sticky;
+}
+
+.heading1 {
+  padding: 2rem 0px;
+}
+
+.heading1 h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gGpFrontListP p {
+  color: white;
+  background: linear-gradient(135deg, #014c54ad, #760132b5);
+  font-size: 1.2rem;
+  padding: 1rem;
+  position: sticky;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: 44%;
+  width: 100%;
+
+  border-radius: 6px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 20px rgba(54, 54, 54, 0.656);
+
+  margin-bottom: 1rem;
+}
+
+.alertBtn {
+  padding-top: 2rem;
+  display: flex;
+  gap: 20px;
+}
+.alertBtn a button {
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  background: linear-gradient(135deg, #0101c6b0, #b90053c0);
+  border-radius: 10px;
+  color: #ffffff;
+  border: none;
+  padding: 18px 80px;
+  transition: transform 0.3s;
+}
+
+.alertBtn a button:hover {
+  transform: scale(1.09);
+  animation: 0.3s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1); /* Original size */
+  }
+  100% {
+    transform: scale(1.05); /* Slightly bigger size */
+  }
+}
+
+@media (max-width: 1020px) {
+  .heading1 h1 {
+    font-size: 2.7rem;
+  }
+  .heading2 h2 {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 720px) {
+  .maincontent {
+    padding: 70px 1rem;
+  }
+  .heading1 h1 {
+    font-size: 2.2rem;
+  }
+  .gGpFrontListP p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .maincontent {
+    padding: 50px 1rem;
+  }
+  .heading1 h1 {
+    font-size: 2rem;
+  }
+  .alertBtn {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .heading1 h1 {
+    font-size: 1.5rem;
+  }
+  .heading2 h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .heading1 h1 {
+    font-size: 1.3rem;
+  }
+}
+/* //////////////////////////////////// */
+/* ///////////////////////////////////// */
+.adiPart3firstcontainer {
+  background-color: #fcfcfc;
+  padding: 4rem 2rem;
+  color: #000000;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.adiPart3firstheading {
+  font-size: 2.5rem;
+  color: #54f0e6;
+  margin-bottom: 1.5rem;
+}
+
+.adiPart3firstintro {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+@media (max-width: 567px) {
+  .adiPart3firstheading {
+    font-size: 1.5rem;
+  }
+  .adiPart3firstintro {
+    font-size: 1rem;
+  }
+}
+
+.adiPart3firstsubheading {
+  font-size: 1.8rem;
+  color: #56cfe1;
+  margin-bottom: 2rem;
+}
+
+.adiPart3firstcardsWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.adiPart3firstcard {
+  background: linear-gradient(145deg, #010809, #292929);
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(84, 144, 240, 0.2);
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+}
+
+.adiPart3firstcard h3 {
+  color: #ed004b;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.adiPart3firstcard p {
+  color: #bbbbbb;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.adiPart3firsticon {
+  color: #56cfe1;
+  width: 2rem;
+  height: 2rem;
+}
+/* ////////////////////////////////////////////////////////////////////// */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.adiPart3secondcontainer {
+  background-color: #0b0b0b;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: #ffffff;
+}
+
+.adiPart3secondglowBorder {
+  background: linear-gradient(145deg, #010809, #292929);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.608);
+  border: 2px solid transparent;
+  border-image: linear-gradient(90deg, #00ffe5, #a200ff) 1;
+  border-radius: 6px;
+  max-width: 800px;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+.adiPart3secondheading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  color: #00ffe7;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+.adiPart3secondparagraph {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #dcdcdc;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+.adiPart3secondsuccess {
+  font-size: 1.1rem;
+  color: #ff66cc;
+  font-weight: 500;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}

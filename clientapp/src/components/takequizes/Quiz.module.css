@@ -1,0 +1,228 @@
+/* Quiz.module.css */
+.quizContainer {
+  min-height: 100vh;
+  height: auto;
+  padding: 5rem 0px;
+  background-color: #000000;
+}
+.quizDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0.7rem;
+  color: #ffffff;
+}
+
+.quiz {
+  background: linear-gradient(
+    135deg,
+    #9a00bf,
+    #1a003e
+  ); /* dark gray background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 1000px;
+}
+.totalTimer2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #ffffff; /* red text */
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.totalTimer,
+.questionCount,
+.OptionsText {
+  color: #ffffff; /* red text */
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.totalTimer333 {
+  color: #ff4040; /* red text */
+  font-size: 32px;
+  font-weight: 600;
+  justify-content: center;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.totalTimer,
+.questionCount {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.totalTimer p {
+  color: white;
+  margin-bottom: 0px;
+}
+
+.questionCount {
+  font-size: 18px;
+}
+
+.answerSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 10px;
+  padding: 2rem 0px;
+}
+
+.answerSection button {
+  background-color: #d9dcff; /* red button background */
+  color: #ffffff; /* white text */
+  gap: 20px;
+  border: 1px solid rgb(255, 2, 82);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.answerSection button img {
+  max-width: 120px;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0px 4px 10px rgba(31, 31, 31, 0.74);
+}
+.answerSection button p {
+  margin-bottom: 0px;
+}
+
+.answerSection button:hover {
+  background-color: #410013;
+  color: white; /* darker red on hover */
+}
+
+.navigationButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navigationButtons button {
+  background: linear-gradient(
+    135deg,
+    #660027,
+    #1a003e
+  ); /* black button background */
+  color: #ffffff; /* white text */
+  border: 1px solid #ff4040; /* red border */
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigationButtons button:hover {
+  background: linear-gradient(
+    135deg,
+    #1a003e,
+    #660027
+  ); /* dark gray on hover */
+  color: #ffffff; /* red text on hover */
+}
+
+@media (max-width: 768px) {
+  .quiz {
+    width: 90%;
+    padding: 15px;
+  }
+  .totalTimer2 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 500px) {
+  .questionCount {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .answerSection {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+#questionNumbering {
+  margin: 0.2rem;
+  border-radius: 50%;
+  width: 38px;
+  padding: 0.3rem 0px;
+  border: none;
+}
+#linkButton {
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: white;
+  background-color: #010430;
+  border: 1px solid rgb(160, 160, 160);
+  padding: 0.5rem 1rem;
+}
+#linkButton:hover {
+  background-color: #000079;
+}
+.questionDataNumbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.questionDataNumbers p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+@media (max-width: 400px) {
+  .questionDataNumbers {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+.questionNumbers {
+  max-height: 150px;
+  height: 100%;
+  overflow: auto;
+  background-color: #110033d7;
+  padding: 1rem 0px 1rem 1rem;
+}
+.seeMoreButton {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 1rem;
+}
+
+.seeMoreButton:hover {
+  background-color: #0056b3;
+}
+.questionTextt {
+  background-color: rgb(238, 249, 255);
+  padding: 0.6rem;
+  border: 1px solid rgb(0, 0, 0);
+  color: black;
+  border-radius: 6px;
+}
+.descriptionBox {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-left: 4px solid #c40373;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

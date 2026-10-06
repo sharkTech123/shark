@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.OurOfficeGreenEfforts {
+  background-color: black;
+  padding-bottom: 6rem;
+  padding-top: 1rem;
+  font-family: "Antonio", sans-serif;
+}
+.csrPageFront {
+  background: url("../../assets/images/communitybanner.jpg");
+  color: white;
+  background-size: cover;
+  background-position: top;
+  border-radius: 10px;
+  padding: 10rem 1rem;
+  position: relative;
+}
+
+.eCSfrontSection {
+  max-width: 1640px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2rem 1rem;
+  margin-bottom: 1rem;
+  position: sticky;
+}
+.eCSfrontSection h2 {
+  font-size: 4.5rem;
+  margin-bottom: 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.gGpFrontListP p {
+  color: white;
+  background: linear-gradient(135deg, #00157199, #01764b76);
+  font-size: 1.2rem;
+  padding: 1rem;
+  position: sticky;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: 44%;
+  width: 100%;
+
+  border-radius: 6px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 20px rgba(54, 54, 54, 0.656);
+
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 780px) {
+  .eCSfrontSection h2 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .eCSfrontSection h2 {
+    font-size: 4.5rem;
+  }
+  .headinSection h2 {
+    font-size: 2.5rem;
+  }
+}
+#cCSecondrySection {
+  max-width: 1640px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+#cCSecondrySection hr {
+  opacity: 1;
+  border: 2px solid rgb(192, 0, 118);
+}
+.cCSecondryHeadin {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 2rem 0px;
+}
+.cCSecondryHeadin h2 {
+  font-size: 3.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(196, 249, 255);
+}
+.cCSecondryHeadin img {
+  max-width: 120px;
+  margin-right: -0.5rem;
+  width: 100%;
+  z-index: 1;
+}
+.cCLists {
+  max-width: 800px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  
+  
+}
+.cCLists p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  color: white;
+  text-align: justify;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #8a007a99, #01764b76);
+}
+.cCLists p span {
+  color: rgb(255, 179, 0);
+}
+@media (max-width: 780px) {
+  .cCSecondryHeadin h2 {
+    font-size: 3.5rem;
+  }
+  .cCLists p {
+    font-size: 1rem;
+  }
+  .cCSecondryHeadin img {
+    max-width: 90px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cCSecondryHeadin h2 {
+    font-size: 2.5rem;
+  }
+  .cCSecondryHeadin img {
+    max-width: 60px;
+    width: 100%;
+  }
+}
+.cCsContentSection {
+  padding: 0px 1rem;
+}
+#cCsContentSection {
+  background: linear-gradient(135deg, #730166cf, #017544b7);
+  color: white;
+  border-radius: 20px;
+  padding: 2rem 4rem;
+  box-shadow: 0 0 20px rgba(148, 148, 148, 0.656);
+  margin: 2rem 0px;
+}
+#cCsContentSection h2 {
+  font-size: 2.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  color: #00eeff99;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+#cCsContentSection p {
+  text-align: justify;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media (max-width: 580px) {
+  #cCsContentSection h2 {
+    font-size: 2.5rem;
+  }
+  #cCsContentSection {
+    padding: 1.5rem 1.5rem;
+  }
+  #cCsContentSection p {
+    font-size: 1rem;
+  }
+}
+.cCImagesSec {
+  padding: 2rem 1rem;
+  max-width: 1640px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+.cCImagesdiv img {
+  max-width: 500px;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(148, 148, 148, 0.656);
+
+  width: 100%;
+}
+#schoolLocal {
+  margin-top: 2rem;
+  background: linear-gradient(135deg, #730166cf, #017544b7);
+  color: white;
+  max-width: 500px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 3em/1em;
+  padding: 1rem 1rem;
+}
+#schoolLocal p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0px;
+}

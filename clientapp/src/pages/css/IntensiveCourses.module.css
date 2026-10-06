@@ -1,0 +1,600 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.intensiveCoursesBanner {
+  background-color: #ff0000;
+  text-align: center;
+}
+.intensiveCoursesHead {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intensiveCoursesHeadDetails {
+  padding: 0rem 1rem;
+}
+.intensiveCoursesImage {
+  padding: 0rem 1rem;
+}
+.head1 h1 {
+  color: #ffffff;
+  font-size: 1.4em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 0.8rem;
+}
+.head2 h2 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2em;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 0.8rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 20px;
+}
+
+#btn {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 15px 60px 15px 60px;
+  transition: color 0.3s, border-color 0.3s, transform 0.3s; /* Added transform to transition */
+}
+
+#btn:hover {
+  background-color: #500202;
+  transform: scale(1.1); /* Grow size by 10% on hover */
+  animation: bounce 0.3s infinite alternate; /* Applying bouncing animation */
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1); /* Original size */
+  }
+  100% {
+    transform: scale(1.05); /* Slightly bigger size */
+  }
+}
+@media (max-width: 885px) {
+  .head1 h1 {
+    font-size: 1.2em;
+  }
+  .head2 h2 {
+    font-size: 40px;
+  }
+  .intensiveCoursesImage img {
+    max-width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .intensiveCoursesHead {
+    display: block;
+  }
+  .head1 h1 {
+    font-size: 1.4em;
+  }
+  .head2 h2 {
+    font-size: 48px;
+  }
+  .intensiveCoursesImage img {
+    max-width: 100%;
+    padding: 1rem 0;
+  }
+}
+@media (max-width: 767px) {
+ 
+  .head1 h1 {
+    font-size: 1.1em;
+  }
+  .head2 h2 {
+    font-size: 35px;
+  }
+  .intensiveCoursesImage img {
+    max-width: 65%;
+  }
+}
+.intensiveCoursesDetails {
+  padding: 2rem 1rem;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Roboto", Sans-serif;
+}
+.intensivedetailsHeading h1 {
+  color: #eb0009;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.intensiveDetailsParagraph p {
+  text-align: center;
+  color: #000000;
+  line-height: 28px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+@media (max-width: 428px) {
+  .intensivedetailsHeading h1 {
+    font-size: 38px;
+  }
+}
+/* /////////////////////////BOOK NOW SECTION CSS////////////////// */
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto", Sans-serif;
+  padding: 80px 0px 80px 0px;
+  background-color: #eb0009;
+}
+
+.iconDiv {
+  animation: slideFromLeft 1s ease-out; /* Animation for sliding from left */
+}
+.iconCar {
+  font-size: 95px;
+  color: #fff;
+  font-family: "Roboto", Sans-serif;
+}
+.headingDiv h1 {
+  line-height: 1;
+  font-size: 55px;
+  font-weight: 600;
+  color: #fff;
+}
+.buttonDiv a {
+  text-decoration: none;
+}
+#buttonDiv {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  color: #000000;
+  border: none;
+  background-color: rgb(239, 219, 31);
+  font-family: "Roboto", Sans-serif;
+
+  padding: 15px 45px 15px 45px;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+#buttonDiv:hover {
+  background-color: lightgreen;
+
+  transform: scale(1.1);
+}
+
+.headingDiv,
+.buttonDiv {
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+/* Keyframes for sliding animation */
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-2000%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 460px) {
+  .headingDiv h1 {
+    font-size: 30px;
+  }
+}
+/* /////////////////////////why choose us css/////////// */
+.features {
+  padding: 2rem 0;
+}
+.features h4 {
+  color: #000000;
+  font-size: 65px;
+  font-weight: 900;
+  line-height: 1.2em;
+  text-align: center;
+  font-family: "Roboto", Sans-serif;
+  margin-bottom: 20px;
+}
+.features p {
+  color: #7a7a7a;
+  line-height: 28px;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Roboto", Sans-serif;
+}
+.mainFeatures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  font-family: "Roboto", Sans-serif;
+  text-align: center;
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.column {
+  padding: 25px 25px 55px 25px;
+  background-color: #ffffff;
+
+  box-shadow: 0px 0px 55px 5px rgba(0, 0, 0, 0.06);
+
+  transition: box-shadow 0.3s ease;
+}
+
+.column:hover {
+  box-shadow: 0px 0px 55px 5px rgba(0, 0, 0, 0.203);
+  border: 1px solid #eb0009;
+}
+.column span {
+  font-size: 50px;
+  color: #706c6c;
+  display: inline-block;
+  padding: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.column h3 {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000000;
+}
+.column p {
+  font-size: 16px;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #7a7a7a;
+}
+#featuresIcon {
+  transition: transform 0.3s ease;
+}
+#featuresIcon:hover {
+  transform: scale(1.2);
+  color: #eb0009;
+}
+@media (max-width: 1085px) {
+  .features h4 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .features h4 {
+    font-size: 30px;
+  }
+}
+
+/* ///////////////////////// intensive driving and form ////////////////////////////// */
+
+.intensiveDrivingInfoSection {
+  display: flex;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", Sans-serif;
+  padding: 2rem 0px;
+}
+.intensivedrivingQA {
+  max-width: 66%;
+  width: 100%;
+}
+.intensivedrivingFormContainer {
+  max-width: 34%;
+  width: 100%;
+}
+.intensivedrivingQA,
+.intensivedrivingFormContainer {
+  flex: 1;
+  padding: 20px;
+}
+.intensivedrivingQA h1 {
+  color: #eb0009;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.intensivedrivingQA p {
+  text-align: left;
+  color: #000000;
+  line-height: 28px;
+}
+.intensivedrivingFormContainer form {
+  margin-top: 20px;
+}
+.intensivedrivingForm {
+  border: 10px solid #eb0009;
+  padding: 5px;
+  background-color: #2b0000;
+  color: #ffffff;
+}
+.intensivedrivingForm h4 {
+  font-size: 35px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.intensivedrivingformGroup {
+  margin-bottom: 20px;
+  padding: 0px 15px;
+}
+
+.intensivedrivingformGroup label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.intensivedrivingformGroup input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+.intensivedrivingformGroup input:focus {
+  border: 1px solid red;
+}
+.intensivedrivingformGroup textarea:focus {
+  border: 1px solid red;
+}
+.intensivedrivingformGroup button {
+  padding: 15px 30px;
+  background-color: #eb0009;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.intensivedrivingformGroup button:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 976px) {
+  .intensiveDrivingInfoSection {
+    display: block;
+  }
+  .intensivedrivingQA {
+    max-width: 100%;
+    width: 100%;
+  }
+  .intensivedrivingFormContainer {
+    max-width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 445px) {
+  .intensivedrivingQA h1 {
+    font-size: 35px;
+  }
+}
+/* /////////////////////////Tab section /////////////////////// */
+/* TabsSection.module.css */
+.tabsection {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0px 1rem;
+  font-family: "Roboto", Sans-serif;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.tab {
+  padding: 20px 25px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  border-bottom: none;
+}
+
+.tab.active {
+  background-color: #eb0009;
+  color: white;
+}
+
+.tabContent {
+  padding: 20px;
+  border-top: none;
+  background-color: #eb0009;
+}
+
+.tabContent p {
+  text-align: left;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  .tabs {
+    flex-direction: column; 
+  }
+
+  .tab {
+    width: 100%; 
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+
+/* ////////////////////////////////Area cover section////////////////////////// */
+.coverAreaSection {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 0;
+  text-align: center;
+  font-family: "Roboto", Sans-serif;
+}
+.coverAreaHeading h1{
+ color: #eb0009;
+ font-size: 50px;
+ font-weight: 600;
+ margin: 2rem 0;
+}
+.smartlearnerArea{
+    display: flex;
+    justify-content: space-around;
+}
+.smartlearnerAreaDetails{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.smartlearnerAreaDetails p{
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+}
+#FaCheckDetailsIcon{
+    font-size: 30px;
+    color: #ff0000;
+    text-align: left;
+    margin-right: 1rem;
+}
+@media (max-width: 767px){
+    .coverAreaHeading h1{
+        font-size: 35px;
+    }
+}
+@media (max-width: 515px){
+    .smartlearnerArea{
+        display: block;
+        align-items: center;
+    }
+    .coverAreaHeading h1{
+        font-size: 25px;
+    }
+    .smartlearnerAreaDetails{
+        justify-content: space-evenly;
+    }
+   
+}
+/* /////////////// reviews section ///////////////// */
+.facebookReviewsSection {
+    text-align: center;
+    padding: 2rem 0;
+   }
+  
+   
+   .facebookReviewsContainer {
+  padding: 2rem 0;
+     background-color: red;
+     
+   }
+   .facebookReviewsContainer hr{
+    border: 2px solid #fff;
+   
+   opacity: 1;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+   }
+ 
+   
+    #heading1 {
+     color: white;
+     font-family: "Arial", Sans-serif;
+     font-size: 65px;
+    
+   }
+   
+   .reviewsList {
+     display: grid;
+     grid-gap: 20px;
+   }
+   
+   .review {
+     background-color: white;
+     padding: 10px;
+     border-radius: 5px;
+   }
+   .followUsLinks{
+     max-width: 1140px;
+     margin-left: auto;
+     margin-right: auto;
+    
+   }
+   .followUsLinks hr{
+     border: 1.05px solid #fff;
+     text-align: center;
+     width: 38%;
+     margin: 0 auto;
+   }
+   .followUsLinks h4{
+    margin-top: 1.8rem;
+     font-family: "Arial", Sans-serif;
+     color: #FFFFFF;
+     line-height: 1;
+     font-size: 2.8em;
+     font-weight: 600;
+     margin-bottom: 1.8rem;
+   }
+   .socialFollowIcons {
+     display: flex;
+     justify-content:space-evenly;
+     max-width: 800px;
+     margin-right: auto;
+     margin-left: auto;
+     padding: 2rem 0;
+     
+   }
+ 
+   .socialFollowIcons a {
+     display: inline-block;
+     background-color: white;
+     border-radius: 6px;
+     padding: 8px 10px 8px 10px;
+   
+     transition: transform 0.3s;
+   }
+ #FollowIcons{
+     color: #eb0009;
+     font-size: 1.7rem;
+ }
+   .socialFollowIcons  a:hover {
+     transform: translateY(-5px);
+   }
+   
+   .socialFollowIcons  i {
+     font-size: 24px;
+     color: #333; /* Change color as needed */
+   }
+   @media (max-width: 770px) {
+     .facebookReviewsSection #heading1{
+         font-size: 45px;
+     }
+     #heading2{
+         font-size: 45px;
+     }
+     .followUsLinks h4{
+         font-size: 2.8em;
+     }
+   }

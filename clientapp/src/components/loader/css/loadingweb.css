@@ -1,0 +1,76 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.loader_Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(180deg, rgb(1, 22, 5), rgb(0, 27, 8));
+}
+.loader_Container p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+} /* Loader.css */
+/* Loader.css */
+.car__body {
+  animation: shake 0.3s ease-in-out infinite alternate;
+  stroke: #ffffff;
+}
+
+.car__line {
+  transform-origin: center right;
+  stroke-dasharray: 30; /* Adjusted for larger size */
+  animation: line 1s ease-in-out infinite;
+  animation-fill-mode: both;
+  stroke: #ffffff;
+}
+.car__line .car__line--top {
+  animation-delay: 0s;
+}
+.car__line .car__line--middle {
+  animation-delay: 0.2s;
+}
+.car__line .car__line--bottom {
+  animation-delay: 0.4s;
+}
+
+.car__wheel--left,
+.car__wheel--right {
+  stroke: #ffffff; /* Maintain white outline for the wheels */
+}
+
+@keyframes shake {
+  0% {
+    transform: translateY(-2%);
+  }
+  100% {
+    transform: translateY(4%);
+  }
+}
+
+@keyframes line {
+  0% {
+    stroke-dashoffset: 30;
+  }
+  25% {
+    stroke-dashoffset: 30;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  51% {
+    stroke-dashoffset: 0;
+  }
+  80% {
+    stroke-dashoffset: -30;
+  }
+  100% {
+    stroke-dashoffset: -30;
+  }
+}

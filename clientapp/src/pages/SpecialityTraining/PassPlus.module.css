@@ -1,0 +1,542 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.imageSection {
+  position: relative;
+  width: 100%;
+  padding: 5rem 0;
+  background-color: #ff0000;
+}
+.maincontent {
+  display: flex;
+  max-width: 1140px;
+  width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  position: relative;
+
+  max-width: 50%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 0px 20px 0px 0px;
+}
+
+.heading1 h1 {
+  color: #ffffff;
+  font-size: 1.4em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 0.8rem;
+}
+.heading2 h2 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2em;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 0.8rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 20px;
+}
+#btn {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 15px 60px 15px 60px;
+  transition: color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+#btn:hover {
+  background-color: #500202;
+  transform: scale(1.1);
+  animation: bounce 0.3s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+.video {
+  position: relative;
+
+  max-width: 50%;
+  width: 100%;
+  text-align: center;
+  padding: 0px 150px 0px 150px;
+}
+
+.video img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 1020px) {
+  .content {
+    padding-top: 75px;
+  }
+  .heading1 h1 {
+    font-size: 0.9em;
+    line-height: 1.7em;
+  }
+  .heading2 h2 {
+    font-size: 27px;
+  }
+  .video {
+    padding: 75px;
+  }
+}
+@media (max-width: 767px) {
+  .content {
+    padding-top: 0px;
+  }
+
+  .maincontent {
+    display: block;
+  }
+  .heading1 {
+    padding-top: 1rem;
+  }
+  .content {
+    max-width: 100%;
+  }
+  .video {
+    max-width: 100%;
+  }
+}
+@media (max-width: 350px) {
+  .video {
+    padding: 40px;
+  }
+}
+/*/////////////////////////////////////////// Youtube video section/////////////////////////////////////// */
+
+.driverSection {
+  background-color: #ffd840;
+}
+.videoSection {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 30px 30px 30px;
+}
+
+.videoSectionleft {
+  flex: 1;
+  padding: 20px;
+}
+
+.videoSectionright {
+  flex: 1;
+  padding: 20px;
+}
+
+.videoSectionleft h1 {
+  color: #eb0009;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Roboto", Sans-serif;
+}
+
+.videoSectionleft p {
+  margin-bottom: 20px;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  font-size: 1rem;
+  color: #000;
+}
+
+.videoContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.videoContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1024px) {
+  .videoSectionleft h1 {
+    font-size: 35px;
+  }
+  .videoSectionleft p {
+    margin-bottom: 10px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 777px) {
+  .videoSection {
+    display: block;
+  }
+  .videoSectionleft h1 {
+    font-size: 50px;
+  }
+  .videoSectionleft p {
+    margin-bottom: 20px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 428px) {
+  .videoSectionleft h1 {
+    font-size: 30px;
+  }
+  .videoSectionleft p {
+    margin-bottom: 10px;
+    line-height: 25px;
+  }
+}
+/* ////////////////////Product card //////////////////////*/
+.passPlusProductCatelog {
+  text-align: center;
+  background-color: #eb0009;
+  padding: 4rem 0px;
+}
+.passPlusProductCatelog h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.chooseProductSection {
+  max-width: 1400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gridViewSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+.gridViewSection ul {
+  padding: 0px;
+  margin: 0px;
+}
+.gridViewSection ul p {
+  padding: 0px;
+  margin: 0px;
+}
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+
+  margin: 20px;
+}
+.productCard {
+  width: 100%;
+}
+.ratingAndPrice {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.productCard img {
+  width: 100%;
+  height: auto;
+}
+.productCard {
+  padding: 5px;
+  border: 1px solid rgba(167, 166, 166, 0.737);
+  border-radius: 4px;
+  background-color: #fff;
+}
+.productDetails h3 {
+  font-size: 15px !important;
+  color: #fff;
+  text-align: center;
+  background-color: black;
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0px;
+}
+.cardDetails li {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+  margin-bottom: 10px;
+}
+.rating {
+  margin-bottom: 10px;
+}
+
+.rating span {
+  color: #ed2025;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.filled {
+  color: #ed2025;
+}
+.postcodeList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 12px; /* Gap between grid items */
+  padding-left: 0px;
+}
+.postcodeList li {
+  padding: 9px;
+  background-color: #eb0009;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #2d2d2d;
+}
+
+.price {
+  font-size: 22px !important;
+  color: #ed2025 !important;
+  font-weight: 600 !important;
+}
+.cardDetails p {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111111;
+}
+.postCodeBlock p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.bookNow,
+.more {
+  padding: 10px 20px;
+  background-color: #111111;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bookNow:hover,
+.more:hover {
+  background-color: #eb0009;
+}
+/* ////////////////////////////////////////////// */
+/* //////////////////////////////practice section ///////////////////////////////////// */
+.practiceSection {
+  padding: 3rem 0;
+}
+.practiceContainer {
+  max-width: 1200px;
+  margin: auto;
+  margin-left: auto;
+  text-align: center;
+  font-family: "Roboto", Sans-serif;
+  padding: 0px 1rem;
+}
+.practiceHeading h4 {
+  color: #eb0009;
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 1.2em;
+  font-family: "Roboto", Sans-serif;
+}
+
+.practiceParagraph {
+  margin-top: 40px;
+}
+.practiceParagraph p {
+  text-align: center;
+  color: #000000;
+  font-family: "Roboto", Sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+@media (max-width: 672px) {
+  .practiceHeading h4 {
+    font-size: 45px;
+  }
+  .passPlusProductCatelog h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 475px) {
+  .practiceHeading h4 {
+    font-size: 34px;
+  }
+  .productGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 80px 0px 80px 0px;
+  background-color: #eb0009;
+}
+
+.iconDiv {
+  animation: slideFromLeft 1s ease-out; /* Animation for sliding from left */
+}
+.iconCar {
+  font-size: 95px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+.headingDiv h1 {
+  line-height: 1;
+  font-size: 55px;
+  font-weight: 600;
+  color: #fff;
+}
+.buttonDiv a {
+  text-decoration: none;
+}
+#buttonDiv {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  color: #000000;
+  border: none;
+  background-color: rgb(239, 219, 31);
+  font-family: "Montserrat", sans-serif;
+
+  padding: 15px 45px 15px 45px;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+#buttonDiv:hover {
+  background-color: lightgreen;
+
+  transform: scale(1.1);
+}
+
+.headingDiv,
+.buttonDiv {
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+/* Keyframes for sliding animation */
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-2000%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 460px) {
+  .headingDiv h1 {
+    font-size: 30px;
+  }
+}
+/* /////////////////////Included///////////////////////// */
+.whatincludedSectionHeading {
+  padding: 2rem;
+}
+.whatincludedSectionHeading h2 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #eb0009;
+  font-family: "Roboto", sans-serif;
+}
+.features {
+  padding: 3rem 0;
+}
+.mainFeatures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  max-width: 1400px;
+  padding: 0rem 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.column {
+  padding: 25px 25px 55px 25px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #eb0009;
+  box-shadow: 0px 0px 55px 5px rgba(0, 0, 0, 0.06);
+  border: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.column:hover {
+  box-shadow: 0px 0px 55px 5px rgba(0, 0, 0, 0.203);
+  border: 1px solid #eb0009;
+}
+.column span {
+  font-size: 50px;
+  color: #706c6c;
+  display: inline-block;
+  padding: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.column h3 {
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.column p {
+  margin: 1rem;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #7a7a7a;
+}
+#featuresIcon {
+  transition: transform 0.3s ease;
+}
+#featuresIcon:hover {
+  transform: scale(1.2);
+  color: #eb0009;
+}
+@media (max-width: 728px) {
+  .whatincludedSectionHeading h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .whatincludedSectionHeading h2 {
+    font-size: 2rem;
+  }
+  .mainFeatures {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}

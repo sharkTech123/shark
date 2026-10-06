@@ -1,0 +1,104 @@
+/* EmailReceived.module.css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.emailReceivedPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.emailReceivedContainer {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.emailReceivedContainer h1 {
+    background-color: yellow;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.emailReceivedContainer p {
+    color: #34495e;
+    margin: 10px 0;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.detailsContainer {
+    text-align: left;
+    margin-top: 20px;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.detailsContainer p {
+    margin: 10px 0;
+    color: #2c3e50;
+    font-size: 1em;
+}
+
+.detailsContainer strong {
+    color: #e74c3c;
+}
+
+.noData {
+    padding: 20px;
+    text-align: center;
+    color: #e74c3c;
+    font-size: 1.2em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .emailReceivedContainer {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .emailReceivedContainer h1 {
+        font-size: 1.8em;
+    }
+
+    .emailReceivedContainer p {
+        font-size: 1em;
+    }
+
+    .detailsContainer p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .emailReceivedContainer {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .emailReceivedContainer h1 {
+        font-size: 1.5em;
+    }
+
+    .emailReceivedContainer p {
+        font-size: 0.9em;
+    }
+
+    .detailsContainer p {
+        font-size: 0.8em;
+    }
+}

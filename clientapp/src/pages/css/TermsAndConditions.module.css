@@ -1,0 +1,111 @@
+/* Add a gray background color with some padding */
+.Tccontainer {
+  background: #000000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.TcHomeBanner {
+  position: relative;
+  background: url("../../assets/images/tc.png");
+  background-size: cover;
+  background-position: center;
+
+  padding: 200px 0;
+}
+
+.opicity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #000000d0;
+}
+/* Header/Blog Title */
+.Tcheader {
+  padding: 30px;
+  max-width: 1640px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+  position: sticky;
+  color: white;
+}
+.Tcheader h2 {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.TcContentSection {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+
+  width: 100%;
+  padding: 2rem 1rem;
+}
+.TcintroHeading {
+  background: linear-gradient(135deg, #4d0071e8, #6574ffee);
+  border-radius: 20px;
+  padding: 2rem;
+}
+.Tcintro {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+.tcBoxes {
+  box-shadow: 0px 0px 55px 5px rgba(161, 2, 122, 0.267);
+  border-radius: 15px;
+  border: 1px solid rgba(110, 0, 0, 0.753);
+  margin: 1rem 0px;
+  padding: 1rem;
+  background: linear-gradient(135deg, #020071e8, #960039ee);
+}
+.tcBoxes ul {
+  list-style-type: disc;
+}
+.tcBoxes ul li {
+  margin: 1rem 0px;
+  font-size: 1.1rem;
+  color: white;
+}
+.Tcsubtitle {
+  font-size: 2rem;
+  color: rgb(156, 255, 230);
+}
+@media (max-width: 727px) {
+  .TcHomeBanner {
+    padding: 160px 0px;
+  }
+  .Tcheader h2 {
+    font-size: 4rem;
+    font-weight: 900;
+  }
+  .Tcintro {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .tcBoxes ul li {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 468px) {
+  .TcHomeBanner {
+    padding: 120px 0px;
+  }
+  .Tcheader h2 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .Tcintro {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  .Tcsubtitle {
+    font-size: 1.5rem;
+  }
+}

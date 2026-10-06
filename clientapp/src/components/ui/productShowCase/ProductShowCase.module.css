@@ -1,0 +1,32 @@
+.flexCateButton {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 2rem;
+}
+#cateButtonsOnProductshowcaseBtn {
+  padding: 0.5rem 3rem;
+}
+@media (max-width: 774px) {
+  .flexCateButton button {
+    max-width: 200px;
+  }
+  .flexCateButton {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
+@media (max-width: 427px) {
+  #redCartImg12 {
+    display: none;
+  }
+  #cateButtonsOnProductshowcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  #cateButtonsOnProductshowcaseBtn {
+    padding: 0.5rem 14px;
+  }
+}

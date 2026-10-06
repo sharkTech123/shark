@@ -1,0 +1,329 @@
+.clockContainer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, #000000a1, #000000);
+  border-radius: 5px;
+  padding: 60px 20px;
+  box-shadow: 1px 1px 5px rgba(26, 26, 26, 0.26),
+    0 15px 90px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+}
+
+.clockCol {
+  text-align: center;
+  margin-right: 40px;
+  margin-left: 40px;
+  min-width: 90px;
+  position: relative;
+}
+
+.clockCol:not(:last-child):before,
+.clockCol:not(:last-child):after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  right: -42px;
+}
+
+.clockCol:not(:last-child):before {
+  top: 35%;
+}
+
+.clockCol:not(:last-child):after {
+  top: 50%;
+}
+
+.clockTimer {
+  color: #ffffff;
+  font-size: 4.2rem;
+  text-transform: uppercase;
+}
+
+.clockLabel {
+  color: rgba(255, 255, 255, 0.781);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-top: 10px;
+}
+p {
+  margin-bottom: 0px;
+}
+
+.clockDay::before {
+  content: attr(data-day);
+}
+
+.clockHours::before {
+  content: attr(data-hours);
+}
+
+.clockMinutes::before {
+  content: attr(data-minutes);
+}
+
+.clockSeconds::before {
+  content: attr(data-seconds);
+}
+
+@media (max-width: 825px) {
+  .clockContainer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .clockCol {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 725px) {
+  .clockContainer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .clockTimer {
+    font-size: 3.5rem;
+  }
+  .clockCol {
+    margin-top: 15px;
+  }
+  .clockCol:not(:last-child):before {
+    top: 30%;
+  }
+  .clockCol:not(:last-child):after {
+    top: 45%;
+  }
+}
+@media (max-width: 625px) {
+  .clockContainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .clockTimer {
+    font-size: 2.5rem;
+  }
+  .clockCol {
+    margin: 20px;
+  }
+
+  .clockCol:not(:last-child):before,
+  .clockCol:not(:last-child):after {
+    right: -22px;
+  }
+  .clockCol:not(:last-child):before {
+    top: 25%;
+  }
+  .clockCol:not(:last-child):after {
+    top: 40%;
+  }
+}
+@media (max-width: 525px) {
+  .clockTimer {
+    font-size: 2rem;
+  }
+  .clockCol {
+    margin: 15px;
+  }
+
+  .clockCol:not(:last-child):before,
+  .clockCol:not(:last-child):after {
+    right: -20px;
+  }
+
+  .clockCol:not(:last-child):before {
+    top: 20%;
+  }
+  .clockCol:not(:last-child):after {
+    top: 35%;
+  }
+}
+@media (max-width: 450px) {
+  .clockTimer {
+    font-size: 1.5rem;
+  }
+  .clockCol {
+    margin: 10px;
+  }
+
+  .clockCol:not(:last-child):before,
+  .clockCol:not(:last-child):after {
+    right: -20px;
+  }
+
+  .clockCol:not(:last-child):before {
+    top: 15%;
+  }
+  .clockCol:not(:last-child):after {
+    top: 30%;
+  }
+}
+@media (max-width: 400px) {
+  .clockLabel {
+    font-size: 0.5rem;
+  }
+  .clockTimer {
+    font-size: 1.2rem;
+  }
+  .clockCol {
+    margin: 5px;
+  }
+
+  .clockCol:not(:last-child):before,
+  .clockCol:not(:last-child):after {
+    right: -5px;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.theoryPortalCountDown {
+  padding: 2rem 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.theoryPortalTimer {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.theoryPortalTimer h4 {
+  background: rgba(209, 196, 196, 0.671);
+  padding: 0.8rem;
+  border-radius: 6px;
+  font-size: 1.2rem;
+}
+@media (max-width: 760px) {
+  .theoryPortalTimer h4 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 7460px) {
+  .theoryPortalTimer h4 {
+    font-size: 1.2rem;
+  }
+}
+
+.theoryPortalTimerInputField {
+  background: linear-gradient(135deg, #02a2ff93, #ff007359);
+  box-shadow: 0 3px 10px rgba(37, 37, 37, 0.39);
+  display: flex;
+  justify-content: center;
+  border-radius: 6px;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  color: rgb(255, 255, 255);
+  padding: 2rem 1.5rem;
+}
+
+.theoryPortalTimerInputField input {
+  background-color: #ffffff;
+  color: #000000;
+}
+.theoryPortalTimerInputField label {
+  font-size: 20px;
+}
+
+.theoryPortalTimerInputField input {
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.664);
+}
+
+.theoryPortalTimerInputField button {
+  margin-left: 20px;
+  border: none;
+  padding: 7px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background-color: rgb(36, 0, 0);
+}
+
+.theoryPortalTimerInputField button:hover {
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+}
+
+.theoryPortalCountDownTimer {
+  display: flex;
+  gap: 10px;
+  padding: 0px 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.theoryPortalCountDownTimer span {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.theoryPortalCountDownTimer p {
+  padding: 2rem;
+  color: black;
+  background-color: #fff;
+  border-radius: 6px;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.theoryPortalCountDownTimer p b {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 670px) {
+  .theoryPortalCountDownTimer p {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .theoryPortalTimerInputField label {
+    display: none;
+  }
+
+  .theoryPortalTimerInputField {
+    padding: 1rem;
+  }
+
+  .theoryPortalTimerInputField input {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .theoryPortalCountDownTimer {
+    display: block;
+  }
+
+  .theoryPortalCountDownTimer span {
+    display: none;
+  }
+
+  .theoryPortalTimerInputField {
+    display: block;
+  }
+
+  .theoryPortalTimerInputField input {
+    margin-bottom: 10px;
+  }
+}

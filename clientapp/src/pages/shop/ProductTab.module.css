@@ -1,0 +1,179 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mb3 {
+ 
+  background-color: #333333;
+}
+.veiwAllBtn{
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.veiwAllBtn a{
+  background-color: #111111;
+}
+.veiwAllBtn button{
+  background-color: #ed2025;
+  border-radius: 6px;
+  padding: 15px 60px;
+  cursor: pointer;
+  font-size: 18px;
+ margin: 1rem 0px;
+ color: #fff;
+ border: none;
+ font-family: "Roboto", sans-serif;
+
+}
+.veiwAllBtn button:hover{
+  background-color: black;
+}
+/* ////////////////////Product card */
+.chooseProductSection{
+    max-width: 1140px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .gridViewSection {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10px; /* Gap between grid items */
+      margin-top: 20px;
+    }
+    .gridViewSection ul {
+      padding: 0px;
+      margin: 0px;
+    }
+    .gridViewSection ul p{
+      padding: 0px;
+      margin: 0px;
+    }
+    .productGrid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 5 columns */
+      grid-auto-rows: minmax(100px, auto); 
+      gap: 10px; /* Gap between grid items */
+      margin-top: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .productCard {
+      max-width: 300px;
+      width: 100%; /* Take full width of each grid cell */
+    }
+    @media (max-width: 900px) {
+      .productGrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-auto-rows: minmax(100px, auto); 
+    }
+    @media (max-width: 593px) {
+      .productGrid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-auto-rows: minmax(100px, auto); 
+    }
+    }
+    }
+    .ratingAndPrice{
+      display: flex;
+      max-width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .productCard img {
+      width: 100%;
+      height: auto;
+    }
+    .productCard{
+      padding: 5px;
+      border: 1px solid rgba(167, 166, 166, 0.737);
+      border-radius: 4px;
+      background-color: #fff;
+    }
+  .productDetails h3{
+      font-size: 15px !important;
+      color: #fff;
+      text-align: center;
+      background-color: black;
+      width: 100%;
+      padding: 20px;
+      margin: 10px 0px;
+  }
+    .cardDetails li{
+      display: flex;
+      justify-content: space-between;
+      padding-left: 0px;
+      margin-bottom: 10px;
+    }
+    .rating {
+      margin-bottom: 10px;
+    }
+    
+    .rating span {
+      color: #ed2025;
+      font-size: 1.2rem;
+      font-weight: 900;
+    }
+    
+    .filled {
+      color: #ed2025;
+    }
+    .postcodeList{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+      gap: 12px; /* Gap between grid items */
+      padding-left: 0px;
+    
+    }
+    .postcodeList li{
+      padding: 9px;
+      background-color: #eb0009;
+      color: #fff;
+      text-align: center;
+      border: 1px solid #2d2d2d;
+    }
+    
+    .price{
+      font-size: 22px !important;
+      color: #ed2025 !important;
+      font-weight: 600 !important;
+    }
+    .cardDetails p {
+      margin-bottom: 5px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #111111;
+      
+    }
+    .postCodeBlock p{
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    
+    .bookNow,
+    .more {
+      padding: 10px 20px;
+      background-color: #111111;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .bookNow:hover,
+    .more:hover {
+      background-color: #eb0009;
+    }

@@ -1,0 +1,169 @@
+/* FilterSection.module.css */
+
+.filterWrapper {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.searchBox form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(250, 250, 250);
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 8px 10px;
+}
+.searchBox form input {
+  border: none;
+  outline: none;
+  padding-left: 7px;
+  border-radius: 20px 0px 0px 20px;
+
+  background-color: rgb(250, 250, 250);
+}
+.searchBox form input .searchButton #searchBtn {
+  color: red;
+}
+.filterCategory h3 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.filterCategories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+.filterCategories button {
+  background-color: rgb(250, 250, 250);
+  border: none;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 8px;
+  max-width: 170px;
+}
+.filterCategories button:hover {
+  background-color: rgb(242, 242, 242);
+}
+.filteredPrice h3 {
+  font-size: 20px;
+
+  margin-bottom: 1rem;
+}
+
+.filteredPrice p {
+  display: flex;
+  justify-content: space-between;
+}
+.filteredPrice input {
+  width: 100%;
+}
+@media (max-width: 728px) {
+  .searchBox {
+    max-width: 350px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .filterCategories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+  .filteredPriceRange {
+    max-width: 350px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* .filterSearch input {
+  padding: 0.6rem 1rem;
+  width: 80%;
+}
+
+.filterCategory div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.4rem;
+}
+
+.filterCategory button {
+  border: none;
+  background-color: black;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.filterCategory button:hover {
+  color: #fff;
+}
+
+.filterCategory button.active {
+  border-bottom: 1px solid #000;
+  color: red;
+}
+
+.filterCompanySelect {
+  padding: 0.3rem 1.2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.filterColorStyle {
+  display: flex;
+  justify-content: center;
+}
+
+.colorAllStyle {
+  background-color: transparent;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+}
+
+.btnStyle {
+  width: 2rem;
+  height: 2rem;
+  background-color: #000;
+  border-radius: 50%;
+  margin-left: 1rem;
+  border: none;
+  outline: none;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.btnStyle:hover {
+  opacity: 1;
+}
+
+.active {
+  opacity: 1;
+}
+
+.checkStyle {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.filterPrice input {
+  margin: 0.5rem 0 1rem 0;
+  padding: 0;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.filterShipping {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filterClear .btn {
+  background-color: #ec7063;
+  color: #000;
+} */

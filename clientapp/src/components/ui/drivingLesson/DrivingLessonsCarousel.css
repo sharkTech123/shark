@@ -1,0 +1,133 @@
+.carousel-section12345 {
+  padding: 4rem 2rem;
+  position: relative;
+}
+.carousel-section123456 {
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+.carousel-container12345 {
+  max-width: 1700px;
+
+  margin: 0 auto;
+}
+
+.carousel-card12345 {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  height: 750px;
+}
+
+/* Alternate positioning */
+.card-up12345 {
+  transform: translateY(-30px);
+}
+
+.card-down12345 {
+  transform: translateY(30px);
+}
+
+/* Keep hover effect consistent */
+.card-content12345:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+.card-content12345 {
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 2rem 25px;
+  min-height: 550px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-content12345:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+.card-img-wrapper12345 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-img12345 {
+  width: 183px;
+  height: 183px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.card-title12345 {
+  font-weight: 900;
+  font-size: 25px;
+  color: #222;
+  line-height: 120%;
+  margin-bottom: 15px;
+}
+
+.card-desc12345 {
+  color: #555;
+  font-size: 1rem;
+  line-height: 150%;
+  margin-bottom: 25px;
+  padding: 1rem;
+}
+
+.find-btn12345 {
+  background-color: #e11b22;
+  color: white;
+  border: none;
+  padding: 16px 26px 14px 33px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+.find-btn12345:hover {
+  background-color: #c91017;
+}
+
+.slick-dots li button:before {
+  font-size: 32px;
+  color: #333;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fffdf2;
+}
+
+@media (max-width: 527px) {
+  .card-img12345 {
+    width: 150px;
+    height: 150px;
+  }
+  .card-title12345 {
+    font-size: 22px;
+  }
+  .carousel-section12345 {
+    padding: 4rem 0rem;
+  }
+  .carousel-card12345 {
+    height: 670px;
+    padding: 10px;
+  }
+  .card-desc12345 {
+    padding: 1rem 0.5rem;
+  }
+  .card-content12345 {
+    padding: 2rem 15px;
+  }
+}
+@media (max-width: 427px) {
+  .carousel-card12345 {
+    padding: 7px;
+  }
+}

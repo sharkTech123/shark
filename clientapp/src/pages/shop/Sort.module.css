@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.sortListProductSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.sortproductDataLength {
+  width: 100%;
+  text-align: center;
+}
+.sortproductDataLength p {
+  font-size: 18px;
+}
+.sortSelectionForm select {
+  padding: 8px 10px;
+
+  width: 100%;
+  border: 1px solid red;
+  border-radius: 4px;
+  font-weight: 500;
+  outline: none;
+}
+.sortSelectionForm select:focus {
+  border-color: blue;
+}
+@media (max-width: 478px) {
+  .sortListProductSection {
+    display: flex;
+    flex-direction: column;
+  }
+}

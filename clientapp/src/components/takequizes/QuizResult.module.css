@@ -1,0 +1,76 @@
+/* QuizResult.module.css */
+
+/* Styles for the quizResultTable */
+
+.tableWrapperCollapse{
+    overflow-x: auto;
+    
+   
+}
+
+#tableRowBg{
+  background: linear-gradient(  180deg, #e4203d, #3e0000);
+}
+#tablebodyRowBg{
+  background: linear-gradient(  180deg, #0003bf, #04003e);
+}
+.quizResultTable {
+    width: 100%;
+    min-width: 1200px;
+    border-collapse: collapse;
+  }
+  
+  .quizResultTable th,
+  .quizResultTable td {
+    padding: 16px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .quizResultTable th {
+    border: 1px solid white;
+    color: white;
+  }
+  
+  .quizResultTable td {
+   border: 1px solid white;
+    color: white;
+  }
+  .catebtn{
+    min-Width: 120px; 
+    margin: 0.5rem; 
+    background-color:#000047;
+    border:1px solid white;
+    color:white; 
+    padding: 0.6rem 0.9rem;
+    border-radius: 6px;
+  }
+.catebtn:hover{
+  background-color:#0d00c6;
+  border: 1px solid black;
+}
+  
+  /* Responsive for quizResultTablets */
+  @media (max-width: 1024px) {
+    .quizResultTable th,
+    .quizResultTable td {
+      padding: 12px;
+      font-size: 14px;
+    }
+  }
+  
+ 
+  #linkButton{
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: white;
+    background-color: #010430;
+    border: 1px solid rgb(160, 160, 160);
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  #linkButton:hover{
+    background-color: #000079;
+  }

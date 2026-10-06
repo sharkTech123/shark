@@ -1,0 +1,112 @@
+.accordionContainer {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0pc auto;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.lessonFlexContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.lessonContainer {
+  background: linear-gradient(135deg, #2b0513a9, #12025cab);
+  border-radius: 5px;
+}
+.LessonAccordionheader {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #040506, #15001b);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 20px;
+  border: 1px solid rgb(102, 102, 147);
+
+  align-items: center;
+}
+
+.LessonAccordionProgress {
+  font-size: 1.1rem;
+}
+
+.listLessonData {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+}
+
+.itemLesson {
+  padding: 20px;
+  border-bottom: 1px solid #7ba1ff;
+  cursor: pointer;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+  position: relative;
+}
+@media (max-width: 467px) {
+  .LessonAccordionheader{
+    font-weight: bold;
+  font-size: 1.2rem;
+  }
+  .LessonAccordionProgress{
+    font-size: 1rem;
+  }
+  .itemLesson {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+.listLessonData a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.itemLesson:hover {
+  background: #6c5771f0;
+  padding-left: 20px;
+  box-shadow: inset 0 0 10px #9c919d;
+}
+
+.lessonOpen {
+  background: #e9e9c6;
+  transition: ease-in-out 0.3s;
+}
+
+.lessonRow {
+  display: flex;
+  align-items: center;
+}
+
+.checkIcon {
+  font-size: 1.5rem;
+  color: #00b3bd;
+  margin-right: 12px;
+}
+
+.quizIcon {
+  font-size: 1.5rem;
+  margin-right: 12px;
+  color: #00b3bd;
+}
+
+.description {
+  font-size: 14px;
+  color: #010101;
+  margin-top: 5px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.lessonOpen .description {
+  opacity: 1;
+  max-height: 100px;
+  transition: ease-in-out 0.3s;
+}
