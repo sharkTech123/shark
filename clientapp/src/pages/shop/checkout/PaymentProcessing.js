@@ -500,7 +500,7 @@ const handleKlarnaPayment = async () => {
                   </p>
                 </div> */}
 {/* ///////////////////////revelote payment//////////////////////////////// */}
-                <div style={{ marginTop: "20px" }}>
+                {/* <div style={{ marginTop: "20px" }}>
                   <button className={styles.revolutbutton} onClick={revolutbtn}>
                     Pay with debit/credit card
                   </button>
@@ -511,7 +511,7 @@ const handleKlarnaPayment = async () => {
                       className="revolut-pay-button"
                     />
                   </div>
-                </div>
+                </div> */}
               </div>
             )}
 
