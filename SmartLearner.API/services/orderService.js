@@ -795,7 +795,7 @@ async handleWebhook(rawBody, sig) {
       service: "gmail",
       auth: {
         user: "Smartlearnerdrivingschool@gmail.com", // Your email
-        pass: "ghzf dspi ndeg ryqw", // Your email password or app password
+        pass: "ghzf dspi ndeg ryqwR", // Your email password or app password
       },
     });
 

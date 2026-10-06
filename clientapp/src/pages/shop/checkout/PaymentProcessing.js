@@ -455,35 +455,9 @@ const handleKlarnaPayment = async () => {
                   fundingSource="paypal"
                 />
 
-                {/* Stripe Payment */}
-                {/*   <img src={stripLogo} alt="stripe" />
-                <form onSubmit={handleStripePayment}>
-                  <CardElement className="stripe-card-input" />
-                  <button
-                    className="payment-button"
-                    type="submit"
-                    disabled={!stripe}>
-                    Pay with Stripe
-                  </button>
-                </form>
-
-                {stripeError && (
-                  <div className="error-message">{stripeError}</div>
-                )}
-                {/* <div className="revolut-section" style={{ marginTop: "20px" }}>
-                <img
-                  src="https://seeklogo.com/images/R/revolut-logo-F5735C9769-seeklogo.com.png"
-                  alt="Revolut"
-                  style={{ width: "150px", marginBottom: "10px" }}
-                />
-                <button
-                  className="payment-button revolut"
-                  onClick={handleRevolutPayment}>
-                  Pay with Revolut
-                </button>
-              </div> */}
+               
               {/* ///////////////////////klarna payment//////////////////////////////// */}
-                <div className={styles.Klarnawrapper}>
+                {/* <div className={styles.Klarnawrapper}>
                   {error && (
                     <div className={styles.errorBox}>
                       <span>⚠️</span> {error}
@@ -524,8 +498,8 @@ const handleKlarnaPayment = async () => {
                     🛡️ Pay later or split into 3 interest-free installments with
                     Klarna. Redirects to Klarna for authentication.
                   </p>
-                </div>
-{/* ///////////////////////klarna payment//////////////////////////////// */}
+                </div> */}
+{/* ///////////////////////revelote payment//////////////////////////////// */}
                 <div style={{ marginTop: "20px" }}>
                   <button className={styles.revolutbutton} onClick={revolutbtn}>
                     Pay with debit/credit card

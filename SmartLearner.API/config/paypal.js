@@ -3,9 +3,9 @@ const axios = require("axios");
 
 const PAYPAL_API_BASE = "https://api.paypal.com";
 const CLIENT_ID =
-  "ASzR9RCfn9wYYvtySf5-jvqFuRcR48EwxVV8KGq000JxdubcsXDO1ggsyllL";
+  "ARWFS0fp8lNALR42g8KRxn9WUHBrQVtUTOqxBPChr0AyWQxmiaAnwDB0k0VzHN5KFePemtyvUNyqM-Ge";
 const CLIENT_SECRET =
-  "EEaC2BCdKDLSXyqPk4Hz1-DNzQ0sxeBj4NY6b3GM2kKCNIFhkG8axNPpjI-E";
+  "EHv_ONuwYPGR20qJmrDSSi_cD_-xB9_vDXL_ewTupFzgzaAFXaz5PVLAt53CP_D25fMUQ9yN_TPm8E_y";
 
 const getAccessToken = async () => {
   try {

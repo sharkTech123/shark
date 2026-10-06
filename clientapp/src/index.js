@@ -29,7 +29,7 @@ root.render(
       <PayPalScriptProvider
         options={{
           "client-id":
-            "ASzR9RCfn9wYYvtySf5-jvqFuRcR48EwxVV8KGq000JxdubcsXDO1ggsyllL",
+            "ARWFS0fp8lNALR42g8KRxn9WUHBrQVtUTOqxBPChr0AyWQxmiaAnwDB0k0VzHN5KFePemtyvUNyqM-Ge",
           currency: "GBP",
           intent: "capture",
         }}>
